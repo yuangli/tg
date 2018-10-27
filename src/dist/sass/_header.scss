@@ -1,0 +1,39 @@
+.l-header{
+    margin: 50vh 0;
+    display: flex;
+    justify-content: space-between; 
+    transform: translate(0, -50%);
+
+}
+
+.c-tags{
+    transform: translate(-30%, 0) rotate(-90deg);
+}
+
+.c-tags--ul{
+    // width: 80vh;
+
+    &__li{
+        margin: 0 auto;
+
+    }
+}
+
+.c-intro{
+    transform: translate(25%, 0) rotate(-90deg) ;
+    width: 80vh;
+    display: flex;
+    justify-content: space-around;
+
+    &__p{
+        width: 35%;
+    }
+     
+}
+
+.c-brand{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}

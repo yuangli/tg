@@ -1,0 +1,121 @@
+.c-box{
+    position: relative;
+    display: flex;
+    margin: 5rem auto;
+    width: 85%;
+
+    /**
+    
+    **/
+
+    &__cates{
+        visibility: hidden;
+        position: absolute;
+        right: 0;
+        width: 20%;
+    }
+
+    &__image{
+        mix-blend-mode: screen;
+        filter: grayscale(100%) contrast(90%);
+        transition: .4s;
+        height: 10%;
+        margin: 0 auto;
+        background: #444C57;
+    }
+
+    &__text{
+        text-align: right;
+        visibility: hidden;
+        position: absolute;
+        left: 3rem;    
+        width: 20%;
+        line-height: 1.5;
+    }
+
+    &__image:hover{
+        filter: none;
+    }
+    
+    &__image:hover ~ &__text{
+        animation-name: fadeInLeft;
+        animation-duration: .6s;
+        animation-delay: .2s;
+        animation-fill-mode: forwards;  
+    }
+    
+    &__image:hover ~ &__cates{
+        animation-name: fadeInRight;
+        animation-duration: .6s;
+        animation-delay: .2s;
+        animation-fill-mode: forwards;  
+    }
+    
+    
+    
+    &__image:hover {
+        background: #000;
+    }
+    
+}
+
+.c-h1__schmearIt{
+    color: $ShmearItColorScheme;
+}
+.c-h1__branding{
+    color: $PersonalBrandingColorScheme;
+}
+.c-h1__meteoriod{
+    color: $MeteoriodColorScheme;
+}
+.c-h1__si{
+    color: $SportsIllustratedColorScheme;
+}
+ 
+.c-h3{
+    color: #97989D;
+}
+
+.c-box__cates > img{
+    max-height: 10rem;
+}
+
+.c-cate{
+    margin: .5rem .3rem;
+    padding: 8px;
+    border-style: solid;
+    border-width: 2px;
+    text-transform: uppercase;
+
+       &--schmearIt{
+           border-color: $ShmearItColorScheme;
+       }
+       &--branding{
+           border-color: $PersonalBrandingColorScheme;
+       }
+       &--meteroid{
+           border-color: $MeteoriodColorScheme;
+       }
+       &--si{
+           border-color: $SportsIllustratedColorScheme;
+       }
+
+       
+       &_button{
+           width: 7.3rem;
+           color: white;
+       }
+       
+       &_button--schmearIt{
+           background-color: $ShmearItColorScheme;
+       }
+       &_button--branding{
+           background-color: $PersonalBrandingColorScheme;
+       }
+       &_button--meteriod{
+           background-color: $MeteoriodColorScheme;
+       }
+       &_button--si{
+           background-color: $SportsIllustratedColorScheme;
+       }
+}

@@ -1,0 +1,15 @@
+.l-navbar{
+    position: sticky;
+    transition-duration: .5s;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10rem;
+    top: 0;
+    padding: 3rem 0;
+
+}
+
+.c-logo{
+    width: 5rem;
+    margin: auto 0;
+}
