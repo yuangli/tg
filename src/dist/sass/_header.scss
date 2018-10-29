@@ -3,18 +3,18 @@
     display: flex;
     justify-content: space-between; 
     transform: translate(0, -50%);
-
+    color: #97989D;
 }
 
 .c-tags{
     transform: translate(-30%, 0) rotate(-90deg);
 }
 
-.c-tags--ul{
+.c-tags__ul{
     // width: 80vh;
 
     &__li{
-        margin: 0 auto;
+        margin: 0 3rem;
 
     }
 }
@@ -26,7 +26,7 @@
     justify-content: space-around;
 
     &__p{
-        width: 35%;
+        width: 40%;
     }
      
 }

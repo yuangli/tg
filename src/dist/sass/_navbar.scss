@@ -1,15 +1,37 @@
 .l-navbar{
-    position: sticky;
     transition-duration: .5s;
     display: flex;
     justify-content: space-between;
-    margin: 0 10rem;
     top: 0;
-    padding: 3rem 0;
+    padding-top: 3rem;
+    margin: 0;
 
 }
 
 .c-logo{
-    width: 5rem;
-    margin: auto 0;
+    display: none;
+}
+
+.c-navbar{
+    margin: auto;
+
+    &__li{
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 1080px){
+    .l-navbar{
+        margin: 0 5rem;
+        position: sticky;
+    }
+    .c-logo{
+        display: inherit;
+        width: 5rem;
+        margin: auto 0;
+    }
+
+    .c-navbar{
+        margin: 0;
+    }
 }

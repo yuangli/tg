@@ -2,61 +2,42 @@
     position: relative;
     display: flex;
     margin: 5rem auto;
-    width: 85%;
-
-    /**
-    
-    **/
+    width: 100%;
+    height: 25vh;
 
     &__cates{
-        visibility: hidden;
-        position: absolute;
-        right: 0;
-        width: 20%;
-    }
-
-    &__image{
-        mix-blend-mode: screen;
-        filter: grayscale(100%) contrast(90%);
-        transition: .4s;
-        height: 10%;
-        margin: 0 auto;
-        background: #444C57;
+        display: none;
     }
 
     &__text{
-        text-align: right;
-        visibility: hidden;
-        position: absolute;
-        left: 3rem;    
-        width: 20%;
-        line-height: 1.5;
+        display: none;
     }
+}
 
-    &__image:hover{
-        filter: none;
-    }
-    
-    &__image:hover ~ &__text{
-        animation-name: fadeInLeft;
-        animation-duration: .6s;
-        animation-delay: .2s;
-        animation-fill-mode: forwards;  
-    }
-    
-    &__image:hover ~ &__cates{
-        animation-name: fadeInRight;
-        animation-duration: .6s;
-        animation-delay: .2s;
-        animation-fill-mode: forwards;  
-    }
-    
-    
-    
-    &__image:hover {
-        background: #000;
-    }
-    
+.page1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+    background-image: url('../img/scene_3.png');
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page2 {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 20vh;
+}
+
+.c-box__exp {
+    visibility: visible;
+    position: relative;
+    display: block;
 }
 
 .c-h1__schmearIt{
@@ -71,7 +52,7 @@
 .c-h1__si{
     color: $SportsIllustratedColorScheme;
 }
- 
+
 .c-h3{
     color: #97989D;
 }
@@ -118,4 +99,81 @@
        &_button--si{
            background-color: $SportsIllustratedColorScheme;
        }
+}
+
+// @media screen and (max-width: 720px){
+//     .c-box{
+//         width: 100%;
+
+//         &__cates{
+//             display: none;
+//         }
+
+//         &__text{
+//             display: none;
+//         }
+//     }
+// }
+
+
+
+@media screen and (min-width: 1080px){
+
+    .page1{
+        position: relative;
+    }
+
+    .c-box{
+        width: 85%;
+
+    
+        &__cates{
+            display: block;
+            visibility: hidden;
+            position: absolute;
+            right: 0;
+            width: 20%;
+        }
+    
+        &__image{
+            mix-blend-mode: screen;
+            filter: grayscale(100%) contrast(90%);
+            transition: .4s;
+            width: 50%;
+            margin: 0 auto;
+        }
+    
+        &__text{
+            display: block;
+            text-align: right;
+            visibility: hidden;
+            position: absolute;
+            left: 3rem;    
+            width: 20%;
+            line-height: 1.5;
+        }
+    
+        &__image:hover{
+            filter: none;
+        }
+        
+        &__image:hover ~ &__text{
+            animation-name: fadeInLeft;
+            animation-duration: .6s;
+            animation-delay: .2s;
+            animation-fill-mode: forwards;  
+        }
+        
+        &__image:hover ~ &__cates{
+            animation-name: fadeInRight;
+            animation-duration: .6s;
+            animation-delay: .2s;
+            animation-fill-mode: forwards;  
+        }
+    }
+
+    .page2{
+        display: none;
+    }
+    
 }

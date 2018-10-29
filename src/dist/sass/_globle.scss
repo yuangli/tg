@@ -3,12 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // overflow: hidden;
-
     /* Border for developing */
     // border-style: solid;
     // border-width: 1px;
     // border-color: rgb(0, 80, 252);
+}
+
+body{
+    overflow-x: hidden;
 }
 
 a{
@@ -32,4 +34,8 @@ li{
 img {
     display: block;
     max-width: 100%;
+  }
+
+  b{
+    font-family: 'Adelon-Bold';
   }
