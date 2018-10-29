@@ -1,0 +1,47 @@
+
+.l-content{
+    width: 90%;
+    margin: 0 auto;        
+}
+
+.l-content > *{
+    line-height: 1.5;
+    margin: 5rem 0;
+}
+
+ .cate li{
+     padding: 0 1rem;
+ }
+
+ .c-form > ul{
+     display: inline;
+ }
+
+ .c-form li{
+     color: #aaa;
+ }
+ .c-form{
+     display: flex;
+     justify-content: space-between;
+
+     &--team{
+        margin-right: 1rem;         
+     }
+ }
+
+//  .l-content > div{
+//      margin: 7rem;
+//  }
+
+@media screen and (min-width: 720px){
+    .l-content{
+    width: 70%;
+    }
+}
+
+@media screen and (min-width: 1080px){
+    .l-content{
+        width: 50%;
+        }
+
+}

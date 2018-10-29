@@ -8,61 +8,9 @@
 @import "animations.scss";
 
 // PORTFOLIO PAGE
-// @import "exit.scss";
-// @import "title.scss";
-// @import "content.scss";
+@import "title.scss";
+@import "content.scss";
 
 .wow:first-child {
     visibility: hidden;
 }
-
-.c-exit{
-    width: 4rem;
-}
- .cate li{
-     padding: 0 1rem;
- }
-
-
- .cate{
-     margin: auto 0;
- }
- 
- .header2{
-     width: 50%;
- }
- 
- .main2{
-     width: 60%;
-     margin: 0 auto;    
- }
- 
- .main2 > p{
-     line-height: 1.5;
-     margin: 5rem 0;
- 
- }
- 
- .fff > ul{
-     display: inline;
- }
- 
- .team{
-     margin-right: 50%;
- }
- .fff li{
-     color: #aaa;
- }
- .fff{
-     display: flex;
-     justify-content: space-between;
- }
- 
- .main2 > div{
-     margin: 7rem;
- }
-
-
-
-
-
