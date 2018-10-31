@@ -1,3 +1,6 @@
+// ELEMENTS
+
+
 // FRONT PAGE
 @import "variables.scss";
 @import "globle.scss";
@@ -11,6 +14,10 @@
 // PORTFOLIO PAGE
 @import "title.scss";
 @import "content.scss";
+
+
+// ABOUT ME PAGE
+@import "aboutme.scss";
 
 .wow:first-child {
     visibility: hidden;

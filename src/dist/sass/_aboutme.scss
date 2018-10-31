@@ -1,0 +1,107 @@
+.l-aboutme{
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.c-summary{
+    width: 80%;
+    margin: 3rem auto;
+    text-align: right;
+}
+
+.l-personal-info{
+    display: flex;
+    flex-wrap: wrap;
+
+    & ul {
+        display: inline;        
+    }
+
+    & > div{
+        margin: 1rem;
+        width: 35vw;
+    }
+}
+
+.c-handwrite{
+    margin: 1rem 0;
+    & > img{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 720px){
+    .c-summary{
+        text-align: center;
+        width: 90%;
+    }
+    .l-aboutme{
+        width: 80%;
+        display: flex;
+    }
+
+    .c-avatar{
+        width: 50%;
+        margin-right: 1.5rem;
+    }
+
+    .l-personal-info{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    
+        & ul {
+            display: inline;        
+        }
+    
+        & > div{
+            margin: 1rem;
+            width: 15vw;
+        }
+    }
+
+    .c-handwrite{
+        margin: 1rem 0;
+        & > img{
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1080px){
+    .c-summary{
+        width: 90%;
+    }
+    .l-aboutme{
+        width: 60%;
+        display: flex;
+    }
+
+    .c-avatar{
+        width: 65%;
+        margin-right: 1.5rem;
+    }
+
+    .l-personal-info{
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+    
+        & > div{
+            margin: 1rem;
+            width: 10vw;
+        }
+    }
+
+    .c-handwrite{
+        margin: 1rem 0;
+        & > img{
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+}
