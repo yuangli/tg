@@ -17,7 +17,7 @@
 wow = new WOW(
     {
         animateClass: 'animated',
-        offset: 250,
+        offset: 100,
         mobile: false,
         live: true,   
         callback: function (box) {
