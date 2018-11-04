@@ -42,9 +42,6 @@
 
 
 
-
-
-
 .l-header{
     // margin: auto;
     height: 50vh;
@@ -61,38 +58,18 @@
 }
 
 .c-tags{
-    // transform: translate(-30%, 0) rotate(-90deg);
-    margin: 0 auto 60vw auto;
-    width: 60vh;
-
-    &__ul{
-        display: flex;
-    justify-content: space-between; 
-    }
-
-    &__ul__li{
-        // display: inline-block;
-        // margin: 0 auto;
-
-    }
+    display: none;
 }
 
 .c-intro{
-    // transform: translate(25%, 0) rotate(-90deg) ;
-    margin: auto;
-    width: 80vh;
-    display: flex;
-    justify-content: space-around;
+    visibility: hidden;
 
-    &__p{
-        width: 40%;
-    }
      
 }
 
 .c-brand{
     position: absolute;
-    top: 50vh;
+    top: 50%;
     left: 50vw;
     transform: translate(-50%, -50%);
 }
@@ -113,9 +90,46 @@
     }
 }
 
+@media screen and (min-width: 720px){
+    .c-tags{
+        display: block;
+        margin: 0 auto 70vw auto;
+        width: 45vh;
+
+        &__ul{
+            display: flex;
+        justify-content: space-between; 
+        }
+
+        &__ul__li{
+            // display: inline-block;
+            // margin: 0 auto;
+
+        }
+    }
+
+    .c-intro{
+        visibility: visible;
+        margin: auto;
+        width: 80vh;
+        display: flex;
+        justify-content: space-around;
+
+        &__p{
+            width: 40%;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1080px){
 
 
-
+    .c-tags{
+    margin: 0 auto 75vw auto;
+    width: 60vh;
+    }
+}
 //
 // .l-header{
 //     margin: auto 0;
