@@ -1,15 +1,17 @@
-var p1 = document.getElementById('page1');
-var p2 = document.getElementById('page2');
+
 
 var startingX;
 
-function p1touchStart(evt) {
+function p1touchStart(evt,touchEle) {
+    console.log(touchEle);
     startingX = evt.touches[0].clientX;
 };
 
-function p1touchMove(evt) {
+function p1touchMove(evt, p1, p2) {
     var touch = evt.touches[0];
     var change = startingX - touch.clientX;
+    var p1 = document.getElementsByClassName(p1);
+var p2 = document.getElementsByClassName(p2);
     if (change < 0) {
         return;
     }
