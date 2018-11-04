@@ -1,5 +1,7 @@
 // ELEMENTS
 
+// FONT FACE
+@import "fontface.scss";
 
 // FRONT PAGE
 @import "variables.scss";
@@ -19,6 +21,8 @@
 // ABOUT ME PAGE
 @import "aboutme.scss";
 
+
+// WOW.JS
 .wow:first-child {
     visibility: hidden;
 }
