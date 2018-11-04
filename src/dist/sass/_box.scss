@@ -1,6 +1,7 @@
 .c-box{
     position: relative;
     display: flex;
+    overflow: hidden;
     margin: 5rem auto;
     width: 100%;
     height: 25vh;
@@ -20,10 +21,42 @@
     left: 0;
     width: 100%;
     height: 25vh;
-    background-image: url('../img/scene_3.png');
-    background-position: center; 
+    background-position: center;  
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.c-box__image {
+    &--eoko{
+        background-image: url('../img/eoko_mock_up.jpg');        
+    }
+    &--busBuddy{
+        background-image: url('../img/busbuddy_logo.png');
+    }
+    &--schmearIt{
+        background-image: url('../img/scene_3.png');
+    }
+    &--branding{
+        background-image: url('../img/branding.png');
+    }    
+    &--wp{
+        background-image: url('../img/wp_mockup.png');
+    }
+    &--michelangelo{
+        background-image: url('../img/michelangelo_mockup.png');
+    }
+    &--meteroid{
+        background-image: url('../img/Rubber Stamp PSD MockUp 3.png');
+    }
+    &--recipes{
+        background-image: url('../img/recipe_mockup.png');
+    }
+    &--coachella{
+        background-image: url('../img/coachella_mockup.png');
+    }
+    &--si{
+        background-image: url('../img/sportillustrated.png');
+    }
 }
 
 .page2 {
@@ -39,15 +72,32 @@
     position: relative;
     display: block;
 }
-
+.c-h1__eoko{
+    color: $EokoColorScheme; 
+}
+.c-h1__busBuddy{
+    color: $BusBuddyColorScheme;
+}
 .c-h1__schmearIt{
-    color: $ShmearItColorScheme;
+    color: $SchmearItColorScheme;
 }
 .c-h1__branding{
     color: $PersonalBrandingColorScheme;
 }
+.c-h1__wp{
+    color: $WordpressColorScheme;
+}
+.c-h1__michelangelo{
+    color: $MichelangeloColorScheme;
+}
 .c-h1__meteoriod{
     color: $MeteoriodColorScheme;
+}
+.c-h1__recipes{
+    color: $RecipeColorScheme;
+}
+.c-h1__coachella{
+    color: $CoachellaColorScheme;
 }
 .c-h1__si{
     color: $SportsIllustratedColorScheme;
@@ -68,37 +118,73 @@
     border-width: 2px;
     text-transform: uppercase;
 
-       &--schmearIt{
-           border-color: $ShmearItColorScheme;
-       }
-       &--branding{
-           border-color: $PersonalBrandingColorScheme;
-       }
-       &--meteroid{
-           border-color: $MeteoriodColorScheme;
-       }
-       &--si{
-           border-color: $SportsIllustratedColorScheme;
-       }
+    &--eoko{
+        border-color: $EokoColorScheme;
+    }
+    &--busBuddy{
+        border-color: $BusBuddyColorScheme;
+    }
+    &--schmearIt{
+        border-color: $SchmearItColorScheme;
+    }
+    &--branding{
+        border-color: $PersonalBrandingColorScheme;
+    }
+    &--wp{
+        border-color: $WordpressColorScheme;
+    }
+    &--michelangelo{
+        border-color: $MichelangeloColorScheme;
+    }
+    &--meteoriod{
+        border-color: $MeteoriodColorScheme;
+    }
+    &--recipes{
+        border-color: $RecipeColorScheme;
+    }
+    &--coachella{
+        border-color: $CoachellaColorScheme;
+    }
+    &--si{
+        border-color: $SportsIllustratedColorScheme;
+    }
 
        
-       &_button{
-           width: 7.3rem;
-           color: white;
-       }
-       
-       &_button--schmearIt{
-           background-color: $ShmearItColorScheme;
-       }
-       &_button--branding{
-           background-color: $PersonalBrandingColorScheme;
-       }
-       &_button--meteriod{
-           background-color: $MeteoriodColorScheme;
-       }
-       &_button--si{
-           background-color: $SportsIllustratedColorScheme;
-       }
+    &_button{
+        width: 7.3rem;
+        color: white;
+    }
+    
+    &_button--eoko{
+        background-color: $EokoColorScheme;
+    }
+    &_button--busBuddy{
+        background-color: $BusBuddyColorScheme;
+    }
+    &_button--schmearIt{
+        background-color: $SchmearItColorScheme;
+    }
+    &_button--branding{
+        background-color: $PersonalBrandingColorScheme;
+    }
+    &_button--michelangelo{
+        background-color: $MichelangeloColorScheme;        
+    }
+    &_button--wp{
+        background-color: $WordpressColorScheme;
+    }
+    &_button--meteriod{
+        background-color: $MeteoriodColorScheme;
+    }
+    &_button--recipes{
+        background-color: $RecipeColorScheme;
+    }
+    &_button--coachella{
+        background-color: $CoachellaColorScheme;
+    }
+    &_button--si{
+        background-color: $SportsIllustratedColorScheme;
+    }
 }
 
 // @media screen and (max-width: 720px){
