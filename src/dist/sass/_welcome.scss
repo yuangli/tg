@@ -1,0 +1,14 @@
+.background{
+    height: 100vh;
+    background-color: #444C57;
+}
+
+.cls-1 {
+    stroke: #fff;
+    fill: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 10px;
+    stroke-dasharray: 8230;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(0.5, 0.3, 0.5, 0.8);
+}
