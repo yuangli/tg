@@ -18,7 +18,7 @@ wow = new WOW(
     {
         animateClass: 'animated',
         offset: 100,
-        mobile: false,
+        // mobile: false,
         live: true,   
         callback: function (box) {
             console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
