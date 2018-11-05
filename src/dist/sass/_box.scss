@@ -10,6 +10,12 @@
         display: none;
     }
 
+    &__cates > img{
+        max-height: 6rem;
+        height: auto;
+        margin-bottom: .2rem;
+    }
+
     &__text{
         display: none;
     }
@@ -64,7 +70,7 @@
     top: 0;
     left: 100%;
     width: 100%;
-    height: 20vh;
+    height: 25vh;
 }
 
 .c-box__exp {
@@ -107,9 +113,9 @@
     color: #97989D;
 }
 
-.c-box__cates > img{
-    max-height: 10rem;
-}
+// .c-box__cates > img{
+//     max-height: 10rem;
+// }
 
 .c-cate{
     margin: .5rem .3rem;
@@ -153,6 +159,7 @@
     &_button{
         width: 7.3rem;
         color: white;
+        text-align: center;
     }
     
     &_button--eoko{
@@ -187,7 +194,7 @@
     }
 }
 
-// @media screen and (max-width: 720px){
+// @media screen and (min-width: 720px){
 //     .c-box{
 //         width: 100%;
 
