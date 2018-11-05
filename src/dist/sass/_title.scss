@@ -1,23 +1,72 @@
 .c-exit{
-    width: 4rem;
+    margin: 2rem 1rem;
+    width: 3rem;
 }
 
 .c-title{
     display: initial;
+    
+    &__feature-img{
+        margin: auto;
+        width: 90%;
+    }
+    
+    &__text{
+        padding: 1rem;
+        margin: auto;
+        width: 90%;
+    }
+
+    & ul{
+        margin: .5rem auto;
+    }
+
+    &__buttons{
+        margin: auto;
+        display: flex;
+        // justify-content: space-between;
+    }
 }
+
+.l-decription{
+    width: 90%;
+    margin: 0 auto;    
+}
+
+.l-decription > *{
+    line-height: 1.5;
+    margin: 5rem 0;
+}
+
 
 @media screen and (min-width: 720px){
     .c-title{
         display: flex;
-        width: 70%;
-        margin-bottom: 10rem;
+        width: 80%;
+        &__feature-img{
+            width: 100%;
+        }
+        &__text{
+            width: 100%;
+        }
+        &__buttons{
+            margin: auto;
+            display: flex;
+        }
     }
 
+    .l-decription{
+        width: 70%;
+    }
 }
 
 @media screen and (min-width: 1080px){
     .c-title > * {
         margin: 0 1.5rem;
     }
+
+    .l-decription{
+        width: 50%;
+        }
 
 }
