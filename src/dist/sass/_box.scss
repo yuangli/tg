@@ -221,6 +221,7 @@
 
     
         &__cates{
+
             display: block;
             visibility: hidden;
             position: absolute;
@@ -231,7 +232,7 @@
         &__image{
             mix-blend-mode: screen;
             filter: grayscale(100%) contrast(90%);
-            transition: .4s;
+            transition: .3s;
             width: 50%;
             margin: 0 auto;
         }
@@ -246,23 +247,23 @@
             line-height: 1.5;
         }
     
-        &__image:hover{
-            filter: none;
-        }
+        // &__image:hover{
+        //     filter: none;
+        // }
         
-        &__image:hover ~ &__text{
-            animation-name: fadeInLeft;
-            animation-duration: .6s;
-            animation-delay: .2s;
-            animation-fill-mode: forwards;  
-        }
+        // &__image:hover ~ &__text{
+        //     animation-name: fadeInLeft;
+        //     animation-duration: .6s;
+        //     animation-delay: .2s;
+        //     animation-fill-mode: forwards;  
+        // }
         
-        &__image:hover ~ &__cates{
-            animation-name: fadeInRight;
-            animation-duration: .6s;
-            animation-delay: .2s;
-            animation-fill-mode: forwards;  
-        }
+        // &__image:hover ~ &__cates{
+        //     animation-name: fadeInRight;
+        //     animation-duration: .6s;
+        //     animation-delay: .2s;
+        //     animation-fill-mode: forwards;  
+        // }
     }
 
     .page2{

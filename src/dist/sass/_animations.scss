@@ -29,6 +29,32 @@
    }
 }
 
+@keyframes fadeInRightR{
+    from{
+        visibility: visible;
+        opacity: 1;
+        right: 0rem;
+    }
+    to {
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+        right: 3rem;
+    }
+}
+
+@keyframes fadeInLeftR{
+   from{
+        visibility: visible;
+        opacity: 1;
+        left: 0rem;
+   }
+   to {
+       visibility: hidden;
+       opacity: 0;
+       left: 3rem;
+   }
+}
 
 @media screen and (min-width: 87.5em) {
     html{

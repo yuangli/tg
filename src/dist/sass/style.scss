@@ -1,4 +1,5 @@
 // ELEMENTS
+@import "variables.scss";
 
 // FONT FACE
 @import "fontface.scss";
@@ -7,7 +8,6 @@
 @import "welcome.scss";
 
 // FRONT PAGE
-@import "variables.scss";
 @import "globle.scss";
 @import "header.scss";
 @import "box.scss";
@@ -23,13 +23,46 @@
 
 // ABOUT ME PAGE
 @import "aboutme.scss";
-
+    
 
 // WOW.JS
 .wow:first-child {
     visibility: hidden;
 }
 
+// JS Trigger
+.js-is-hovered{
+    filter: none;
+
+    ~ .c-box__text{
+        animation-name: fadeInLeft;
+        animation-duration: .6s;
+        animation-delay: .2s;
+        animation-fill-mode: forwards;  
+    }
+
+    ~ .c-box__cates{
+        animation-name: fadeInRight;
+        animation-duration: .6s;
+        animation-delay: .2s;
+        animation-fill-mode: forwards;  
+    }
+}
+
+.js-is-nohovered{
+
+    ~ .c-box__text{
+        animation-name: fadeInLeftR;
+        animation-duration: .3s;
+        animation-fill-mode: forwards;  
+    }
+
+    ~ .c-box__cates{
+        animation-name: fadeInRightR;
+        animation-duration: .3s;
+        animation-fill-mode: forwards;  
+    }
+}
 *{
 /* Border for developing */
 // border-style: solid;
