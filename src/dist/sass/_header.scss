@@ -1,58 +1,9 @@
-// .c-vertical-text{
-//     margin: 50vh 0;
-//     display: flex;
-//     justify-content: space-between; 
-//     transform: translate(0, -50%);
-//     color: #97989D;
-// }
-
-// .c-tags{
-//     transform: translate(0, 0) rotate(-90deg);
-// }
-
-// .c-tags__ul{
-//     // width: 80vh;
-
-//     &__li{
-//         margin: 0 3rem;
-
-//     }
-// }
-
-// .c-intro{
-//     transform: translate(0, 0) rotate(-90deg) ;
-//     width: 80vh;
-//     display: flex;
-//     justify-content: space-around;
-
-//     &__p{
-//         width: 40%;
-//     }
-     
-// }
-
-// .c-brand{
-//     position: absolute;
-//     top: 50vh;
-//     left: 50vw;
-//     transform: translate(-50%, -50%);
-// }
-
-
-
-
-
 .l-header{
-    // margin: auto;
     height: 50vh;
 }
 
 .c-vertical-text{
     margin-top: 50vh;
-    // height: 100vw;
-    // display: flex;
-    // justify-content: space-between; 
-    // transform: translate(0, -50%);
     transform: translate(0, -50%) rotate(-90deg);
     color: #97989D;
 }
@@ -71,14 +22,11 @@
     top: 50%;
     left: 50vw;
     transform: translate(-50%, -50%);
-    animation: shrink 4s;
-    transition: 2s;
     width: 15rem;
     height: 15rem;
 }
 
 .c-branding-img {
-    // transform: translate(-50%, -50%);
     position: relative;
     margin: auto;
     // height: 10rem;
@@ -86,14 +34,7 @@
     padding: 1.5rem 2rem;
 }
 
-svg{
-    animation: shrink2 4s;
-}
-
 .c-view-more{
-    animation-duration: 1s;
-    animation-delay: 4.5s;
-
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50vh;
@@ -116,19 +57,12 @@ svg{
         width: 45vh;
 
         &__ul{
-            animation-duration: 1s;
-            animation-delay: 3s;
-            // animation-iteration-count: infinite;
-
             display: flex;
             justify-content: space-between; 
         }
     }
 
     .c-intro{
-        animation-duration: 1s;
-        animation-delay: 3s;
-
         visibility: visible;
         margin: auto;
         width: 80vh;
@@ -143,61 +77,8 @@ svg{
 }
 
 @media screen and (min-width: 1080px){
-
-
     .c-tags{
     margin: 0 auto 75vw auto;
     width: 60vh;
     }
 }
-//
-// .l-header{
-//     margin: auto 0;
-//     height: 100vh;
-// }
-
-// .c-vertical-text{
-//     margin: 3rem auto;
-//     // display: flex;
-//     // flex-direction: column;
-//     transform: translate(0, -50%) rotate(-90deg);
-//     color: #97989D;
-// }
-
-// .c-tags{
-//     margin: auto 0;
-//     padding-bottom: 80vw;
-//     width: 50vw;
-
-//     &__ul{
-//         display: flex;
-//     justify-content: space-between; 
-//     padding: 0 3rem;
-//     }
-
-//     &__ul__li{
-//         // display: inline-block;
-//         // margin: 0 auto;
-
-//     }
-// }
-
-// .c-intro{
-//     margin: auto 0;
-//     width: 50vw;
-//     display: flex;
-//     justify-content: space-around;
-
-//     &__p{
-//         width: 40%;
-//     }
-     
-// }
-
-// .c-brand{
-//     position: absolute;
-//     top: 50vh;
-//     left: 50vw;
-//     transform: translate(-50%, -50%);
-// }
-// 
