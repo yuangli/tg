@@ -4,20 +4,30 @@
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
     <link rel="stylesheet" href="dist/css/normalize.css">
     <link rel="stylesheet" href="dist/css/libs/animate.css">
     <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="dist/img/favicon.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Yuang Li | Front Page</title>
 </head>
 
 <body>
-    <!-- <div class="backgrounds">
-        <video autoplay muted loop id="myVideo">
-            <source src="blot-color.mp4" type="video/mp4">
-        </video>
-    </div> -->
+    <div class="backgrounds">
+    </div>
     <header class="l-header">
         <div class="c-vertical-text">
             <div class="c-tags">
@@ -53,7 +63,7 @@
             </svg>
         </div>
         <div class="c-view-more animated fadeIn">
-            <p>View More</p>
+            <a href="index.html#c-navbar">View More</a>
             <div class="c-view-more--trangle"></div>
         </div>
     </div>
@@ -61,8 +71,8 @@
         <div class="c-logo">
             <img src="dist/img/logo.png" alt="home">
         </div>
-        <div class="c-navbar">
-            <ul class="">
+        <div id="c-navbar" class="c-navbar">
+            <ul>
                 <li class="c-navbar__li c-navbar__li--uiux">UI/UX</li>
                 <li class="c-navbar__li c-navbar__li--graphic">Graphic</li>
                 <li class="c-navbar__li c-navbar__li--dev">Dev</li>
@@ -72,24 +82,26 @@
     </nav>
     <main class="l-wrapper">
         <!--  -->
-        <div class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-            <div class="c-box__image c-box__image--eoko page1" onclick="location.href='single.html';" id="page1"
+        <div id="eoko" class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
+            <div class="c-box__image c-box__image--eoko page1" onclick="location.href='eoko.html';" id="page1"
                 ontouchstart="p1touchStart_1(event)" ontouchmove="p1touchMove_1(event)" ontouchend="p1touchEnd_1(event)">
+                <div class="c-color-filter"></div>
             </div>
             <div class="c-box__text">
-                <h1 class="c-h1__eoko">Eoko</h1>
-                <h3 class="c-h3">Clout Quiz</h3>
+                <h1 class="c-h1__eoko">eoko.inc</h1>
+                <h3 class="c-h3">UI/UX Design Intern</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, quidem quia. Ratione harum,
-                    temporibus quod dolores.
+                    Intern as a lead UI/UX Designer for eoko.inc. I am helping the company to improve the UI and UX of
+                    both
+                    eoko app and CloutQuiz app.
                 </p>
             </div>
             <div class="c-box__cates">
                 <img src="dist/img/eoko-logo.png" alt="SchmearIt">
                 <ul>
                     <li class="c-cate c-cate--eoko">ui/ux</li>
-                    <li class="c-cate c-cate--eoko">dev</li>
-                    <li class="c-cate c-cate--eoko">coursework</li>
+                    <li class="c-cate c-cate--eoko">graphic</li>
+                    <li class="c-cate c-cate--eoko">Dev</li>
                 </ul>
                 <p class="c-cate c-cate_button c-cate_button--eoko">View More</p>
             </div>
@@ -110,8 +122,9 @@
             </div>
         </div>
 
-        <div class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-            <div class="c-box__image c-box__image--busBuddy page1" onclick="location.href='single.html';" id="page1"
+        <div id="busbuddy" class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s"
+            data-wow-delay=".2s">
+            <div class="c-box__image c-box__image--busBuddy page1" onclick="location.href='busbuddy.html';" id="page1"
                 ontouchstart="p1touchStart_2(event)" ontouchmove="p1touchMove_2(event)" ontouchend="p1touchEnd_2(event)">
             </div>
             <div class="c-box__text">
@@ -148,8 +161,9 @@
             </div>
         </div>
 
-        <div class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-            <div class="c-box__image c-box__image--schmearIt page1" onclick="location.href='single.html';" id="page1"
+        <div id="schmearit" class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s"
+            data-wow-delay=".2s">
+            <div class="c-box__image c-box__image--schmearIt page1" onclick="location.href='schmearit.html';" id="page1"
                 ontouchstart="p1touchStart_3(event)" ontouchmove="p1touchMove_3(event)" ontouchend="p1touchEnd_3(event)">
             </div>
             <div class="c-box__text">
@@ -164,8 +178,7 @@
                 <img src="dist/img/SchmearIt_Main-Logo.jpg" alt="SchmearIt">
                 <ul>
                     <li class="c-cate c-cate--schmearIt">ui/ux</li>
-                    <li class="c-cate c-cate--schmearIt">dev</li>
-                    <li class="c-cate c-cate--schmearIt">coursework</li>
+                    <li class="c-cate c-cate--schmearIt">Prototype</li>
                 </ul>
                 <p class="c-cate c-cate_button c-cate_button--schmearIt">View More</p>
             </div>
@@ -186,23 +199,25 @@
             </div>
         </div>
 
-        <div class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-            <div class="c-box__image c-box__image--branding page1" onclick="location.href='single.html';" id="page1"
+        <div id="branding" class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s"
+            data-wow-delay=".2s">
+            <div class="c-box__image c-box__image--branding page1" onclick="location.href='branding.html';" id="page1"
                 ontouchstart="p1touchStart_4(event)" ontouchmove="p1touchMove_4(event)" ontouchend="p1touchEnd_4(event)">
             </div>
             <div class="c-box__text">
                 <h1 class="c-h1__branding">Branding</h1>
-                <h3 class="c-h3">Mobile Ordering App</h3>
+                <h3 class="c-h3">Personal Branding Design & Dev</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, deleniti quia! Unde a quo hic
+                    The process of designing my person branding is consist of creating a unique logo, building a
+                    fully-polished website and a solid resume.
                 </p>
             </div>
             <div class="c-box__cates">
                 <img src="dist/img/branding_title_image.png" alt="branding">
                 <ul>
-                    <li class="c-cate c-cate--branding">ui/ux</li>
+                    <li class="c-cate c-cate--branding">graphic</li>
                     <li class="c-cate c-cate--branding">dev</li>
-                    <li class="c-cate c-cate--branding">coursework</li>
+                    <li class="c-cate c-cate--branding">ui/ux</li>
                 </ul>
                 <p class="c-cate c-cate_button c-cate_button--branding">View More</p>
             </div>
@@ -223,23 +238,24 @@
             </div>
         </div>
 
-        <div class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-            <div class="c-box__image c-box__image--wp page1" onclick="location.href='single.html';" id="page1"
-                ontouchstart="p1touchStart_5(event)" ontouchmove="p1touchMove_5(event)" ontouchend="p1touchEnd_5(event)">
+        <div id="wp" class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
+            <div class="c-box__image c-box__image--wp page1" onclick="location.href='wp.html';" id="page1" ontouchstart="p1touchStart_5(event)"
+                ontouchmove="p1touchMove_5(event)" ontouchend="p1touchEnd_5(event)">
             </div>
             <div class="c-box__text">
-                <h1 class="c-h1__wp">Wordpress</h1>
-                <h3 class="c-h3">Mobile Ordering App</h3>
+                <h1 class="c-h1__wp">YuangLi.com</h1>
+                <h3 class="c-h3">Responsive CMS Website</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, deleniti quia! Unde a quo hic
+                    Created a responsive CMS website from scratch by designing, wireframing, coding the static page and
+                    then the dynamic page using PHP with WordPress system.
                 </p>
             </div>
             <div class="c-box__cates">
                 <img src="dist/img/wp_logo.png" alt="wp">
                 <ul>
-                    <li class="c-cate c-cate--wp">ui/ux</li>
                     <li class="c-cate c-cate--wp">dev</li>
-                    <li class="c-cate c-cate--wp">coursework</li>
+                    <li class="c-cate c-cate--wp">ui/ux</li>
+                    <li class="c-cate c-cate--wp">database</li>
                 </ul>
                 <p class="c-cate c-cate_button c-cate_button--wp">View More</p>
             </div>
@@ -260,24 +276,25 @@
             </div>
         </div>
 
-        <div class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-            <div class="c-box__image c-box__image--michelangelo page1" onclick="location.href='single.html';" id="page1"
+        <div id="michelangelo" class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s"
+            data-wow-delay=".2s">
+            <div class="c-box__image c-box__image--michelangelo page1" onclick="location.href='michelangelo.html';" id="page1"
                 ontouchstart="p1touchStart_6(event)" ontouchmove="p1touchMove_6(event)" ontouchend="p1touchEnd_6(event)">
             </div>
             <div class="c-box__text">
                 <h1 class="c-h1__michelangelo">Michelangelo</h1>
-                <h3 class="c-h3">Mobile Ordering App</h3>
+                <h3 class="c-h3">Coloring book</h3>
                 <p>
-                    Over the past 10 weeks our group has been working closely with Schmear It and their customers to
-                    create a brand new mobile ordering experience.
+                    The project is for Workflow Optimization class, learning collaborative
+                    workflow techniques and maintaining deliverable schedule
                 </p>
             </div>
             <div class="c-box__cates">
                 <img src="dist/img/michelangelo_logo.png" alt="michelangelo">
                 <ul>
-                    <li class="c-cate c-cate--michelangelo">ui/ux</li>
                     <li class="c-cate c-cate--michelangelo">dev</li>
-                    <li class="c-cate c-cate--michelangelo">coursework</li>
+                    <li class="c-cate c-cate--michelangelo">ui</li>
+                    <li class="c-cate c-cate--michelangelo">wireframe</li>
                 </ul>
                 <p class="c-cate c-cate_button c-cate_button--michelangelo">View More</p>
             </div>
@@ -298,8 +315,9 @@
             </div>
         </div>
 
-        <div class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-            <div class="c-box__image c-box__image--meteroid page1" onclick="location.href='single.html';" id="page1"
+        <div id="meteoriod" class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s"
+            data-wow-delay=".2s">
+            <div class="c-box__image c-box__image--meteroid page1" onclick="location.href='meteoriod.html';" id="page1"
                 ontouchstart="p1touchStart_7(event)" ontouchmove="p1touchMove_7(event)" ontouchend="p1touchEnd_7(event)">
             </div>
             <div class="c-box__text">
@@ -336,31 +354,32 @@
             </div>
         </div>
 
-        <div class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-            <div class="c-box__image c-box__image--recipes page1" onclick="location.href='single.html';" id="page1"
+        <div id="recipes" class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s"
+            data-wow-delay=".2s">
+            <div class="c-box__image c-box__image--recipes page1" onclick="location.href='recipes.html';" id="page1"
                 ontouchstart="p1touchStart_8(event)" ontouchmove="p1touchMove_8(event)" ontouchend="p1touchEnd_8(event)">
             </div>
             <div class="c-box__text">
                 <h1 class="c-h1__recipes">Recipes</h1>
-                <h3 class="c-h3">Mobile Ordering App</h3>
+                <h3 class="c-h3">Online cookbook</h3>
                 <p>
-                    Over the past 10 weeks our group has been working closely with Schmear It and their customers to
-                    create a brand new mobile ordering experience.
+                    Recipes cookbook is a project I created for scripting II class, which is about learning PHP and
+                    MySQL.
                 </p>
             </div>
             <div class="c-box__cates">
-                <img src="dist/img/meteoriod.jpg" alt="recipes">
+                <img src="dist/img/recipes_logo.png" alt="recipes">
                 <ul>
-                    <li class="c-cate c-cate--recipes">ui/ux</li>
                     <li class="c-cate c-cate--recipes">dev</li>
-                    <li class="c-cate c-cate--recipes">coursework</li>
+                    <li class="c-cate c-cate--recipes">ui</li>
+                    <li class="c-cate c-cate--recipes">database</li>
                 </ul>
                 <p class="c-cate c-cate_button c-cate_button--recipes">View More</p>
             </div>
             <div class="page2" id="page2" ontouchstart="p2touchStart_8(event)" ontouchmove="p2touchMove_8(event)"
                 ontouchend="p2touchEnd_8(event)">
                 <div class="c-box__img">
-                    <img src="dist/img/meteoriod.jpg" alt="recipes">
+                    <img src="dist/img/recipes_logo.png" alt="recipes">
                 </div>
                 <div class="c-box__exp">
                     <h1 class="c-h1__recipes">Recipes</h1>
@@ -374,22 +393,22 @@
             </div>
         </div>
 
-        <div class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-            <div class="c-box__image c-box__image--coachella page1" onclick="location.href='single.html';" id="page1"
+        <div id="coachella" class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s"
+            data-wow-delay=".2s">
+            <div class="c-box__image c-box__image--coachella page1" onclick="location.href='coachella.html';" id="page1"
                 ontouchstart="p1touchStart_9(event)" ontouchmove="p1touchMove_9(event)" ontouchend="p1touchEnd_9(event)">
             </div>
             <div class="c-box__text">
                 <h1 class="c-h1__coachella">Coachella 2018</h1>
                 <h3 class="c-h3">Interactive Poster</h3>
                 <p>
-                    Over the past 10 weeks our group has been working closely with Schmear It and their customers to
-                    create a brand new mobile ordering experience.
+                    Coachella interactive poster contains the basic information about the concert. Animations and
+                    background music make the poster more engaging.
                 </p>
             </div>
             <div class="c-box__cates">
                 <img src="dist/img/coachella_logo.png" alt="coachella">
                 <ul>
-                    <li class="c-cate c-cate--coachella">ui/ux</li>
                     <li class="c-cate c-cate--coachella">dev</li>
                     <li class="c-cate c-cate--coachella">coursework</li>
                 </ul>
@@ -404,32 +423,31 @@
                     <h1 class="c-h1__coachella">coachella</h1>
                     <h3 class="c-h3">Mobile Ordering App</h3>
                     <p>
-                        Over the past 10 weeks our group has been working closely with Schmear It and their customers
-                        to
-                        create a brand new mobile ordering experience.
+                        Coachella interactive poster contains the basic information about the concert. Animations and
+                        background music make the poster more engaging to play with.
                     </p>
                 </div>
             </div>
         </div>
 
-        <div class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-            <div class="c-box__image c-box__image--si page1" onclick="location.href='single.html';" id="page1"
-                ontouchstart="p1touchStart_10(event)" ontouchmove="p1touchMove_10(event)" ontouchend="p1touchEnd_10(event)">
+        <div id="si" class="c-box js-is-hovered js-isn-hovered wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
+            <div class="c-box__image c-box__image--si page1" onclick="location.href='si.html';" id="page1" ontouchstart="p1touchStart_10(event)"
+                ontouchmove="p1touchMove_10(event)" ontouchend="p1touchEnd_10(event)">
             </div>
             <div class="c-box__text">
-                <h1 class="c-h1__si">Schmear It</h1>
-                <h3 class="c-h3">Mobile Ordering App</h3>
+                <h1 class="c-h1__si">Sport Illustrated</h1>
+                <h3 class="c-h3">Interface Redesign</h3>
                 <p>
-                    Over the past 10 weeks our group has been working closely with Schmear It and their customers to
-                    create a brand new mobile ordering experience.
+                    For the final project of user interface design class, I redesigned the interface of si.com and
+                    created
+                    a responsive prototype based on real contents.
                 </p>
             </div>
             <div class="c-box__cates">
                 <img src="dist/img/sportillustrated_title_image.png" alt="si">
                 <ul>
-                    <li class="c-cate c-cate--si">ui/ux</li>
-                    <li class="c-cate c-cate--si">dev</li>
-                    <li class="c-cate c-cate--si">coursework</li>
+                    <li class="c-cate c-cate--si">Wireframe</li>
+                    <li class="c-cate c-cate--si">ui</li>
                 </ul>
                 <p class="c-cate c-cate_button c-cate_button--si">View More</p>
             </div>
@@ -464,17 +482,33 @@
     <script src="dist/js/scroll.js"></script>
     <script src="dist/js/index.js"></script>
     <script src="dist/js/swipe2.js"></script>
-    <!-- <script>
-        $(function () {
 
-            $('.c-brand').on('click', function () {
-                $('.c-branding-img').addClass('animated rotateIn').one('animationend',
-                    function () {
-                        $('.c-branding-img').removeClass('animated rotateIn');
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
                     });
+                } // End if
             });
         });
-    </script> -->
+    </script>
 
 </body>
 
