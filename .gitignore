@@ -49,6 +49,5 @@ Thumbs.db
 # Other #
 ############
 node_modules
-style.css
 src/dist/img
 src/test
