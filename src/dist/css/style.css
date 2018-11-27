@@ -20,9 +20,20 @@
   stroke: #fff;
   fill: #fff;
   stroke-miterlimit: 10;
-  stroke-width: 10px;
+  stroke-width: 20px;
   stroke-dasharray: 8230;
   opacity: 10;
+}
+
+.aboutmeAnimation .cls-1 {
+  stroke-width: 20px;
+  stroke-dasharray: 8230;
+  opacity: 10;
+  animation: animateR 1.5s cubic-bezier(0.5, 0.5, 0.3, 0.5);
+  animation-fill-mode: forwards;
+}
+.aboutmeAnimation > .c-aboutmeBtn {
+  display: inline;
 }
 
 .c-brand {
@@ -116,6 +127,21 @@ b {
   padding: 1.5rem 2rem;
 }
 
+.c-aboutmeBtn {
+  display: none;
+  animation-delay: 1s;
+  text-align: center;
+  color: white;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.c-branding-img:hover {
+  cursor: pointer;
+}
+
 .c-view-more {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -167,6 +193,11 @@ b {
   width: 100%;
   height: 25vh;
 }
+.c-box__image {
+  mix-blend-mode: screen;
+  filter: grayscale(100%) contrast(90%);
+  transition: 0.3s;
+}
 .c-box__cates {
   display: none;
 }
@@ -188,6 +219,12 @@ b {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.c-indicator {
+  position: absolute;
+  top: 50%;
+  left: 90%;
 }
 
 .c-box__image--eoko {
@@ -280,7 +317,7 @@ b {
 }
 
 .c-cate {
-  margin: 0.5rem 0.3rem;
+  margin: 1rem 0.3rem;
   padding: 8px;
   border-style: solid;
   border-width: 2px;
@@ -318,6 +355,7 @@ b {
 }
 .c-cate_button {
   width: 7.3rem;
+  padding: 0.5rem 1rem;
   color: white;
   text-align: center;
 }
@@ -368,9 +406,6 @@ b {
     width: 20%;
   }
   .c-box__image {
-    mix-blend-mode: screen;
-    filter: grayscale(100%) contrast(90%);
-    transition: 0.3s;
     width: 50%;
     margin: 0 auto;
   }
@@ -560,6 +595,27 @@ b {
     stroke-dashoffset: 0;
   }
 }
+@keyframes animateR {
+  0% {
+    opacity: 10;
+    fill: white;
+    stroke-dashoffset: 0;
+  }
+  10% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0;
+  }
+  90% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 8230;
+  }
+  100% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 8230;
+  }
+}
 @keyframes shrink2 {
   0% {
     transform: translate(25%, -25%);
@@ -641,6 +697,11 @@ b {
 
   .l-decription {
     width: 50%;
+  }
+
+  .c-exit {
+    top: 0;
+    position: fixed;
   }
 }
 .l-content {
@@ -785,10 +846,6 @@ b {
     margin: 0 auto;
   }
 }
-.wow:first-child {
-  visibility: hidden;
-}
-
 .js-is-hovered {
   filter: none;
 }

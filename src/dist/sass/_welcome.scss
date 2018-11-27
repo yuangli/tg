@@ -12,9 +12,22 @@
     stroke: #fff;
     fill: #fff;
     stroke-miterlimit: 10;
-    stroke-width: 10px;
+    stroke-width: 20px;
     stroke-dasharray: 8230;
     opacity: 10;
+}
+
+.aboutmeAnimation{
+    .cls-1 {
+        stroke-width: 20px;
+        stroke-dasharray: 8230;
+        opacity: 10;
+        animation: animateR 1.5s cubic-bezier(0.5, 0.5, 0.3, 0.5);
+        animation-fill-mode: forwards;  
+    }
+    >.c-aboutmeBtn{
+        display: inline;
+    }
 }
 
 .c-brand{
