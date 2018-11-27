@@ -85,9 +85,9 @@
         <!--  -->
         <div id="eoko" class="c-box wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
             <div class="c-box__image c-box__image--eoko page1" onclick="location.href='eoko.html';" id="page1"
-                ontouchstart="p1touchStart_1(event)" ontouchmove="p1touchMove_1(event)" ontouchend="p1touchEnd_1(event)">
+                ontouchstart="p1touchStart(event,0)" ontouchmove="p1touchMove(event,0)" ontouchend="p1touchEnd(event,0)">
                 <div class="c-color-filter"></div>
-                <!-- <img class="c-indicator" src="dist/img/swipe-indicator.png" alt="indicator"> -->
+                <img class="c-indicator" src="dist/img/swipe-indicator.png" alt="indicator">
             </div>
             <div class="c-box__text">
                 <h1 class="c-h1__eoko">eoko.inc</h1>
@@ -107,8 +107,8 @@
                 </ul>
                 <a href="eoko.html" class="c-cate c-cate_button c-cate_button--eoko">View More</a>
             </div>
-            <div class="page2" id="page2" ontouchstart="p2touchStart_1(event)" ontouchmove="p2touchMove_1(event)"
-                ontouchend="p2touchEnd_1(event)">
+            <div class="page2" id="page2" ontouchstart="p2touchStart(event,0)" ontouchmove="p2touchMove(event,0)"
+                ontouchend="p2touchEnd(event,0)">
                 <div class="c-box__img">
                     <img src="dist/img/eoko-logo.png" alt="eoko">
                 </div>
@@ -124,9 +124,9 @@
             </div>
         </div>
 
-        <!-- <div id="busbuddy" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
+        <div id="busbuddy" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
             <div class="c-box__image c-box__image--busBuddy page1" onclick="location.href='busbuddy.html';" id="page1"
-                ontouchstart="p1touchStart_2(event)" ontouchmove="p1touchMove_2(event)" ontouchend="p1touchEnd_2(event)">
+                ontouchstart="p1touchStart(event,1)" ontouchmove="p1touchMove(event,1)" ontouchend="p1touchEnd(event,1)">
             </div>
             <div class="c-box__text">
                 <h1 class="c-h1__busBuddy">Bus Buddy</h1>
@@ -145,8 +145,8 @@
                 </ul>
                 <a href="busbuddy.html" class="c-cate c-cate_button c-cate_button--busBuddy">View More</a>
             </div>
-            <div class="page2" id="page2" ontouchstart="p2touchStart_2(event)" ontouchmove="p2touchMove_2(event)"
-                ontouchend="p2touchEnd_2(event)">
+            <div class="page2" id="page2" ontouchstart="p2touchStart(event,1)" ontouchmove="p2touchMove(event,1)"
+                ontouchend="p2touchEnd(event,1)">
                 <div class="c-box__img">
                     <img src="dist/img/busbuddy_logo.png" alt="">
                 </div>
@@ -160,11 +160,11 @@
                     </p>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <div id="schmearit" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
             <div class="c-box__image c-box__image--schmearIt page1" onclick="location.href='schmearit.html';" id="page1"
-                ontouchstart="p1touchStart_3(event)" ontouchmove="p1touchMove_3(event)" ontouchend="p1touchEnd_3(event)">
+                ontouchstart="p1touchStart(event,2)" ontouchmove="p1touchMove(event,2)" ontouchend="p1touchEnd(event,2)">
             </div>
             <div class="c-box__text">
                 <h1 class="c-h1__schmearIt">Schmear It</h1>
@@ -182,8 +182,8 @@
                 </ul>
                 <a href="schmearit.html" class="c-cate c-cate_button c-cate_button--schmearIt">View More</a>
             </div>
-            <div class="page2" id="page2" ontouchstart="p2touchStart_3(event)" ontouchmove="p2touchMove_3(event)"
-                ontouchend="p2touchEnd_3(event)">
+            <div class="page2" id="page2" ontouchstart="p2touchStart(event,2)" ontouchmove="p2touchMove(event,2)"
+                ontouchend="p2touchEnd(event,2)">
                 <div class="c-box__img">
                     <img src="dist/img/SchmearIt_Main-Logo.jpg" alt="SchmearIt">
                 </div>
@@ -201,7 +201,7 @@
 
         <div id="branding" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
             <div class="c-box__image c-box__image--branding page1" onclick="location.href='branding.html';" id="page1"
-                ontouchstart="p1touchStart_4(event)" ontouchmove="p1touchMove_4(event)" ontouchend="p1touchEnd_4(event)">
+                ontouchstart="p1touchStart(event,3)" ontouchmove="p1touchMove(event,3)" ontouchend="p1touchEnd(event,3)">
             </div>
             <div class="c-box__text">
                 <h1 class="c-h1__branding">Branding</h1>
@@ -220,8 +220,8 @@
                 </ul>
                 <a href="branding.html" class="c-cate c-cate_button c-cate_button--branding">View More</a>
             </div>
-            <div class="page2" id="page2" ontouchstart="p2touchStart_4(event)" ontouchmove="p2touchMove_4(event)"
-                ontouchend="p2touchEnd_4(event)">
+            <div class="page2" id="page2" ontouchstart="p2touchStart(event,3)" ontouchmove="p2touchMove(event,3)"
+                ontouchend="p2touchEnd(event,3)">
                 <div class="c-box__img">
                     <img src="dist/img/branding_title_image.png" alt="branding">
                 </div>
@@ -238,8 +238,8 @@
         </div>
 
         <div id="wp" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-            <div class="c-box__image c-box__image--wp page1" onclick="location.href='wp.html';" id="page1" ontouchstart="p1touchStart_5(event)"
-                ontouchmove="p1touchMove_5(event)" ontouchend="p1touchEnd_5(event)">
+            <div class="c-box__image c-box__image--wp page1" onclick="location.href='wp.html';" id="page1" ontouchstart="p1touchStart(event,4)"
+                ontouchmove="p1touchMove(event,4)" ontouchend="p1touchEnd(event,4)">
             </div>
             <div class="c-box__text">
                 <h1 class="c-h1__wp">YuangLi.com</h1>
@@ -258,8 +258,8 @@
                 </ul>
                 <a href="wp.html" class="c-cate c-cate_button c-cate_button--wp">View More</a>
             </div>
-            <div class="page2" id="page2" ontouchstart="p2touchStart_5(event)" ontouchmove="p2touchMove_5(event)"
-                ontouchend="p2touchEnd_5(event)">
+            <div class="page2" id="page2" ontouchstart="p2touchStart(event,4)" ontouchmove="p2touchMove(event,4)"
+                ontouchend="p2touchEnd(event,4)">
                 <div class="c-box__img">
                     <img src="dist/img/wp_logo.png" alt="wp">
                 </div>
@@ -277,7 +277,7 @@
 
         <div id="michelangelo" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
             <div class="c-box__image c-box__image--michelangelo page1" onclick="location.href='michelangelo.html';" id="page1"
-                ontouchstart="p1touchStart_6(event)" ontouchmove="p1touchMove_6(event)" ontouchend="p1touchEnd_6(event)">
+                ontouchstart="p1touchStart(event,5)" ontouchmove="p1touchMove(event,5)" ontouchend="p1touchEnd(event,5)">
             </div>
             <div class="c-box__text">
                 <h1 class="c-h1__michelangelo">Michelangelo</h1>
@@ -296,8 +296,8 @@
                 </ul>
                 <a href="michelangelo.html" class="c-cate c-cate_button c-cate_button--michelangelo">View More</a>
             </div>
-            <div class="page2" id="page2" ontouchstart="p2touchStart_6(event)" ontouchmove="p2touchMove_6(event)"
-                ontouchend="p2touchEnd_6(event)">
+            <div class="page2" id="page2" ontouchstart="p2touchStart(event,5)" ontouchmove="p2touchMove(event,5)"
+                ontouchend="p2touchEnd(event,5)">
                 <div class="c-box__img">
                     <img src="dist/img/michelangelo_logo.png" alt="michelangelo">
                 </div>
@@ -313,9 +313,9 @@
             </div>
         </div>
 
-        <!-- <div id="meteoriod" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
+        <div id="meteoriod" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
             <div class="c-box__image c-box__image--meteroid page1" onclick="location.href='meteoriod.html';" id="page1"
-                ontouchstart="p1touchStart_7(event)" ontouchmove="p1touchMove_7(event)" ontouchend="p1touchEnd_7(event)">
+                ontouchstart="p1touchStart(event,6)" ontouchmove="p1touchMove(event,6)" ontouchend="p1touchEnd(event,6)">
             </div>
             <div class="c-box__text">
                 <h1 class="c-h1__meteoriod">Meteoriod</h1>
@@ -334,8 +334,8 @@
                 </ul>
                 <a href="meteoriod.html" class="c-cate c-cate_button c-cate_button--meteoriod">View More</a>
             </div>
-            <div class="page2" id="page2" ontouchstart="p2touchStart_7(event)" ontouchmove="p2touchMove_7(event)"
-                ontouchend="p2touchEnd_7(event)">
+            <div class="page2" id="page2" ontouchstart="p2touchStart(event,6)" ontouchmove="p2touchMove(event,6)"
+                ontouchend="p2touchEnd(event,6)">
                 <div class="c-box__img">
                     <img src="dist/img/meteoriod.jpg" alt="meteoriod">
                 </div>
@@ -349,11 +349,11 @@
                     </p>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <div id="recipes" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
             <div class="c-box__image c-box__image--recipes page1" onclick="location.href='recipes.html';" id="page1"
-                ontouchstart="p1touchStart_8(event)" ontouchmove="p1touchMove_8(event)" ontouchend="p1touchEnd_8(event)">
+                ontouchstart="p1touchStart(event,7)" ontouchmove="p1touchMove(event,7)" ontouchend="p1touchEnd(event,7)">
             </div>
             <div class="c-box__text">
                 <h1 class="c-h1__recipes">Recipes</h1>
@@ -372,8 +372,8 @@
                 </ul>
                 <a href="recipes.html" class="c-cate c-cate_button c-cate_button--recipes">View More</a>
             </div>
-            <div class="page2" id="page2" ontouchstart="p2touchStart_8(event)" ontouchmove="p2touchMove_8(event)"
-                ontouchend="p2touchEnd_8(event)">
+            <div class="page2" id="page2" ontouchstart="p2touchStart(event,7)" ontouchmove="p2touchMove(event,7)"
+                ontouchend="p2touchEnd(event,7)">
                 <div class="c-box__img">
                     <img src="dist/img/recipes_logo.png" alt="recipes">
                 </div>
@@ -391,7 +391,7 @@
 
         <div id="coachella" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
             <div class="c-box__image c-box__image--coachella page1" onclick="location.href='coachella.html';" id="page1"
-                ontouchstart="p1touchStart_9(event)" ontouchmove="p1touchMove_9(event)" ontouchend="p1touchEnd_9(event)">
+                ontouchstart="p1touchStart(event,8)" ontouchmove="p1touchMove(event,8)" ontouchend="p1touchEnd(event,8)">
             </div>
             <div class="c-box__text">
                 <h1 class="c-h1__coachella">Coachella 2018</h1>
@@ -409,8 +409,8 @@
                 </ul>
                 <a href="coachella.html" class="c-cate c-cate_button c-cate_button--coachella">View More</a>
             </div>
-            <div class="page2" id="page2" ontouchstart="p2touchStart_9(event)" ontouchmove="p2touchMove_9(event)"
-                ontouchend="p2touchEnd_9(event)">
+            <div class="page2" id="page2" ontouchstart="p2touchStart(event,8)" ontouchmove="p2touchMove(event,8)"
+                ontouchend="p2touchEnd(event,8)">
                 <div class="c-box__img">
                     <img src="dist/img/coachella_logo.png" alt="coachella">
                 </div>
@@ -426,8 +426,8 @@
         </div>
 
         <div id="si" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-            <div class="c-box__image c-box__image--si page1" onclick="location.href='si.html';" id="page1" ontouchstart="p1touchStart_10(event)"
-                ontouchmove="p1touchMove_10(event)" ontouchend="p1touchEnd_10(event)">
+            <div class="c-box__image c-box__image--si page1" onclick="location.href='si.html';" id="page1" ontouchstart="p1touchStart(event,9)"
+                ontouchmove="p1touchMove(event,9)" ontouchend="p1touchEnd(event,9)">
             </div>
             <div class="c-box__text">
                 <h1 class="c-h1__si">Sport Illustrated</h1>
@@ -446,8 +446,8 @@
                 </ul>
                 <a href="si.html" class="c-cate c-cate_button c-cate_button--si">View More</a>
             </div>
-            <div class="page2" id="page2" ontouchstart="p2touchStart_10(event)" ontouchmove="p2touchMove_10(event)"
-                ontouchend="p2touchEnd_10(event)">
+            <div class="page2" id="page2" ontouchstart="p2touchStart(event,9)" ontouchmove="p2touchMove(event,9)"
+                ontouchend="p2touchEnd(event,9)">
                 <div class="c-box__img">
                     <img src="dist/img/sportillustrated_title_image.png" alt="si">
                 </div>
@@ -476,7 +476,7 @@
     <script src="dist/js/libs/wow.min.js"></script>
     <script src="dist/js/scroll.js"></script>
     <script src="dist/js/index.js"></script>
-    <script src="dist/js/swipe2.js"></script>
+    <script src="dist/js/swipe.js"></script>
 
     <script>
         var brandingImg = document.getElementsByClassName('c-branding-img');
