@@ -1,5 +1,5 @@
 .c-exit{
-    margin: 2rem 1rem;
+    margin: 3rem 2rem;
     width: 3rem;
 }
 
@@ -25,6 +25,19 @@
         margin: auto;
         display: flex;
         // justify-content: space-between;
+    }
+}
+
+.c-pagination{
+    margin: 3rem 1rem;
+    width: 5rem;
+    display: flex;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+
+    & > *{
+        margin-right: 1rem;
     }
 }
 
@@ -76,5 +89,10 @@
     .l-decription{
         width: 50%;
         }
+
+    .c-exit{
+        top: 0;
+        position: fixed;
+    }
 
 }
