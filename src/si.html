@@ -2,91 +2,154 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    <link rel="stylesheet" href="dist/css/normalize.css">
     <link rel="stylesheet" href="dist/css/libs/animate.css">
     <link rel="stylesheet" href="dist/css/style.css">
+    <link href="dist/css/animsition.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Yuang Li | SI</title>
 </head>
 
 <body>
-    <div class="c-exit">
-        <div class="home" onclick="location.href='index.html#si';">
-            <img src="dist/img/exit.png" alt="home">
-        </div>
+    <div class="animsition">
+        <header class="l-hearder--nav">
+            <a class="c-exit  wow fadeInDown animsition-link" href="index.html#coachella">
+                <img src="dist/img/exit.png" alt="home">
+            </a>
+            <div class="c-pagination wow fadeInDown">
+                <a class="c-pagination__prev animsition-link" href="coachella.html">
+                    <img src="../src/dist/img/prev.png" alt="prev">
+                </a>
+                <a class="c-pagination__next animsition-link" href="">
+                    <img src="../src/dist/img/next.png" alt="next">
+                </a>
+            </div>
+        </header>
+
+        <header class="c-title c-box wow fadeInUp" style="height:auto;">
+            <div class="c-title__feature-img">
+                <img src="dist/img/sportillustrated_title_image.png" alt="si">
+            </div>
+            <div class="c-title__text">
+                <h1 class="c-h1__si">Sport Illustrated</h1>
+                <h3 class="c-h3">Interface Redesign</h3>
+                <p>
+                    For the final project of user interface design class, I redesigned the interface of si.com and
+                    created
+                    a responsive prototype based on real contents.
+                </p>
+                <ul>
+                    <li class="c-cate c-cate--si">Wireframe</li>
+                    <li class="c-cate c-cate--si">ui</li>
+                </ul>
+                <div class="c-title__buttons">
+                    <a href="https://preview.uxpin.com/81e59b05f5c54ddc10d3309b26479183c6937f72" class="c-cate c-cate_button c-cate_button--si">Live
+                        Server</a>
+                </div>
+            </div>
+        </header>
+
+
+        <main class="l-decription">
+            <img class="c-title-image wow fadeInUp" src="dist/img/sportillustrated.png" alt="s">
+            <p class="wow fadeInUp">
+                For the final project of user interface design class, I redesigned the interface of si.com and created
+                a responsive prototype based on real contents. My approaches of the process is using mobile first
+                sequence.
+                I did a lot of researhes on the relative websites of Sport Illustrated like ESPN, FOX, Bleacher Report
+                and
+                mapped down the features and analyzed the hierarchy.
+                <br><br>
+                I used UXPin as my prototyping tool, which is also the first tool I had even tried. I added real
+                content to
+                the prototype as well as the real ads. Interactions, transitions and animations added made the
+                prototype
+                well-polished. At the end, I also included the night shift that users can choose to view the website on
+                dark mode or day mode.
+            </p>
+            <div class="c-form wow fadeInUp">
+                <ul class="c-form--team">
+                    <p>
+                        Team
+                    </p>
+                    <li>Yuang Li</li>
+                </ul>
+                <ul class="c-form--tech">
+                    <p>
+                        Technologie
+                    </p>
+                    <li>Wireframing</li>
+                    <li>Interface Design</li>
+                    <li>Interaction Design</li>
+                </ul>
+                <ul class="c-form--app">
+                    <p>
+                        Applications
+                    </p>
+                    <li>Invision</li>
+                    <li>UXPin</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer class="l-footer">
+            <h1>Header1</h1>
+            <h2>Header2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, velit nostrum quidem, labore odit
+                eligendi incidunt numquam non corrupti quos blanditiis sapiente fugiat distinctio provident! Dolor
+                dolorem
+                non aperiam quisquam!</p>
+        </footer>
     </div>
 
-    <header class="c-title c-box" style="height:auto;">
-        <div class="c-title__feature-img">
-            <img src="dist/img/sportillustrated_title_image.png" alt="si">
-        </div>
-        <div class="c-title__text">
-            <h1 class="c-h1__si">Sport Illustrated</h1>
-            <h3 class="c-h3">Interface Redesign</h3>
-            <p>
-                For the final project of user interface design class, I redesigned the interface of si.com and created
-                a responsive prototype based on real contents.
-            </p>
-            <ul>
-                <li class="c-cate c-cate--si">Wireframe</li>
-                <li class="c-cate c-cate--si">ui</li>
-            </ul>
-            <div class="c-title__buttons">
-                <a href="https://preview.uxpin.com/81e59b05f5c54ddc10d3309b26479183c6937f72" class="c-cate c-cate_button c-cate_button--si">Live
-                    Server</a>
-            </div>
-        </div>
-    </header>
-
-
-    <main class="l-decription">
-        <img class="c-title-image" src="dist/img/sportillustrated.png" alt="s">
-        <p>
-            For the final project of user interface design class, I redesigned the interface of si.com and created
-            a responsive prototype based on real contents. My approaches of the process is using mobile first sequence.
-            I did a lot of researhes on the relative websites of Sport Illustrated like ESPN, FOX, Bleacher Report and
-            mapped down the features and analyzed the hierarchy.
-            <br><br>
-            I used UXPin as my prototyping tool, which is also the first tool I had even tried. I added real content to
-            the prototype as well as the real ads. Interactions, transitions and animations added made the prototype
-            well-polished. At the end, I also included the night shift that users can choose to view the website on
-            dark mode or day mode.
-        </p>
-        <div class="c-form">
-            <ul class="c-form--team">
-                <p>
-                    Team
-                </p>
-                <li>Yuang Li</li>
-            </ul>
-            <ul class="c-form--tech">
-                <p>
-                    Technologie
-                </p>
-                <li>Wireframing</li>
-                <li>Interface Design</li>
-                <li>Interaction Design</li>
-            </ul>
-            <ul class="c-form--app">
-                <p>
-                    Applications
-                </p>
-                <li>Invision</li>
-                <li>UXPin</li>
-            </ul>
-        </div>
-    </main>
-
-    <footer class="l-footer">
-        <h1>Header1</h1>
-        <h2>Header2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, velit nostrum quidem, labore odit
-            eligendi incidunt numquam non corrupti quos blanditiis sapiente fugiat distinctio provident! Dolor dolorem
-            non aperiam quisquam!</p>
-    </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="dist/js/animsition.min.js" charset="utf-8"></script>
+    <script src="dist/js/libs/wow.min.js"></script>
+    <script src="dist/js/scroll.js"></script>
+    <script src="dist/js/index.js"></script>
+    <script src="dist/js/swipe.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".animsition").animsition({
+                inClass: 'fade-in',
+                outClass: 'fade-out',
+                inDuration: 300,
+                outDuration: 300,
+                linkElement: '.animsition-link',
+                // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+                loading: false,
+                loadingParentElement: 'body', //animsition wrapper element
+                loadingClass: 'animsition-loading',
+                loadingInner: '', // e.g '<img src="loading.svg" />'
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: ['animation-duration', '-webkit-animation-duration'],
+                // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+                // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+                overlay: false,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body',
+                transition: function (url) { window.location.href = url; }
+            });
+        });
+    </script>
 
 </body>
 

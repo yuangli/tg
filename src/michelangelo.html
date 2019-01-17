@@ -2,100 +2,158 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    <link rel="stylesheet" href="dist/css/normalize.css">
     <link rel="stylesheet" href="dist/css/libs/animate.css">
     <link rel="stylesheet" href="dist/css/style.css">
+    <link href="dist/css/animsition.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Yuang Li | Schmear It</title>
+    <title>Yuang Li | Michelangelo</title>
 </head>
 
 <body>
-    <div class="c-exit">
-        <div class="home" onclick="location.href='index.html#michelangelo';">
-            <img src="dist/img/exit.png" alt="home">
-        </div>
+    <div class="animsition">
+        <header class="l-hearder--nav">
+            <a class="c-exit  wow fadeInDown animsition-link" href="index.html#wp">
+                <img src="dist/img/exit.png" alt="home">
+            </a>
+            <div class="c-pagination wow fadeInDown">
+                <a class="c-pagination__prev animsition-link" href="wp.html">
+                    <img src="../src/dist/img/prev.png" alt="prev">
+                </a>
+                <a class="c-pagination__next animsition-link" href="recipes.html">
+                    <img src="../src/dist/img/next.png" alt="next">
+                </a>
+            </div>
+        </header>
+
+        <header class="c-title c-box wow fadeInUp" style="height:auto;">
+            <div class="c-title__feature-img">
+                <img src="dist/img/michelangelo_logo.png" alt="michelangelo">
+            </div>
+            <div class="c-title__text">
+                <h1 class="c-h1__michelangelo">Michelangelo</h1>
+                <h3 class="c-h3">Coloring book</h3>
+                <p>
+                    The project is for Workflow Optimization class, learning collaborative
+                    workflow techniques and maintaining deliverable schedule.
+                </p>
+                <ul>
+                    <li class="c-cate c-cate--michelangelo">dev</li>
+                    <li class="c-cate c-cate--michelangelo">ui/ux</li>
+                    <li class="c-cate c-cate--michelangelo">wireframe</li>
+                </ul>
+                <div class="c-title__buttons">
+                    <a href="https://yuangli.com/idmt380" class="c-cate c-cate_button c-cate_button--michelangelo">Live
+                        Server</a>
+                    <a href="https://github.com/jdyuanglee/idmt380" class="c-cate c-cate_button c-cate_button--michelangelo">View
+                        Code</a>
+                </div>
+            </div>
+        </header>
+
+
+        <main class="l-decription">
+            <img class="c-title-image wow fadeInUp" src="dist/img/michelangelo_mockup.png" alt="s">
+            <p class="wow fadeInUp">
+                The project is for Workflow Optimization class, learning collaborative
+                workflow techniques and maintaining deliverable schedule. The theory of coloring book itself is about
+                using
+                the grouping in svg and Jquery to detect hover, click for selecting and filling color.
+                <br>
+                <br>
+                For the workflow optimization, we learnt and applied those techniques to our building process. We coded
+                bash scripting, gulp and used npm modules to handle those jobs. Moreover, we used and forked GitHub
+                from our project
+                manager and work collaboratively over there by using features branches and merge regulations.
+            </p>
+            <div class="c-form wow fadeInUp">
+                <ul class="c-form--team">
+                    <p>
+                        Team
+                    </p>
+                    <li>Yuang Li</li>
+                    <li>Axel Mortimer</li>
+                    <li>Katie Zhao</li>
+                    <li>Nick Camarata</li>
+                </ul>
+                <ul class="c-form--tech">
+                    <p>
+                        Technologie
+                    </p>
+                    <li>HTML, CSS & JS</li>
+                    <li>Node.js</li>
+                    <li>npm</li>
+                    <li>gulp</li>
+                    <li>bash script</li>
+                </ul>
+                <ul class="c-form--app">
+                    <p>
+                        Applications
+                    </p>
+                    <li>Adobe Illustrator</li>
+                    <li>Slack</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+        </main>
+        <footer class="l-footer">
+            <h1>Header1</h1>
+            <h2>Header2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, velit nostrum quidem, labore odit
+                eligendi incidunt numquam non corrupti quos blanditiis sapiente fugiat distinctio provident! Dolor
+                dolorem
+                non aperiam quisquam!</p>
+        </footer>
     </div>
 
-    <header class="c-title c-box" style="height:auto;">
-        <div class="c-title__feature-img">
-            <img src="dist/img/michelangelo_logo.png" alt="michelangelo">
-        </div>
-        <div class="c-title__text">
-            <h1 class="c-h1__michelangelo">Michelangelo</h1>
-            <h3 class="c-h3">Coloring book</h3>
-            <p>
-                The project is for Workflow Optimization class, learning collaborative
-                workflow techniques and maintaining deliverable schedule.
-            </p>
-            <ul>
-                <li class="c-cate c-cate--michelangelo">dev</li>
-                <li class="c-cate c-cate--michelangelo">ui/ux</li>
-                <li class="c-cate c-cate--michelangelo">wireframe</li>
-            </ul>
-            <div class="c-title__buttons">
-                <a href="https://yuangli.com/idmt380" class="c-cate c-cate_button c-cate_button--michelangelo">Live
-                    Server</a>
-                <a href="https://github.com/jdyuanglee/idmt380" class="c-cate c-cate_button c-cate_button--michelangelo">View
-                    Code</a>
-            </div>
-        </div>
-    </header>
-
-
-    <main class="l-decription">
-        <img class="c-title-image" src="dist/img/michelangelo_mockup.png" alt="s">
-        <p>
-            The project is for Workflow Optimization class, learning collaborative
-            workflow techniques and maintaining deliverable schedule. The theory of coloring book itself is about using
-            the grouping in svg and Jquery to detect hover, click for selecting and filling color.
-            <br>
-            <br>
-            For the workflow optimization, we learnt and applied those techniques to our building process. We coded
-            bash scripting, gulp and used npm modules to handle those jobs. Moreover, we used and forked GitHub from our project
-            manager and work collaboratively over there by using features branches and merge regulations.
-        </p>
-        <div class="c-form">
-            <ul class="c-form--team">
-                <p>
-                    Team
-                </p>
-                <li>Yuang Li</li>
-                <li>Axel Mortimer</li>
-                <li>Katie Zhao</li>
-                <li>Nick Camarata</li>
-            </ul>
-            <ul class="c-form--tech">
-                <p>
-                    Technologie
-                </p>
-                <li>HTML, CSS & JS</li>
-                <li>Node.js</li>
-                <li>npm</li>
-                <li>gulp</li>
-                <li>bash script</li>
-            </ul>
-            <ul class="c-form--app">
-                <p>
-                    Applications
-                </p>
-                <li>Adobe Illustrator</li>
-                <li>Slack</li>
-                <li>GitHub</li>
-            </ul>
-        </div>
-    </main>
-
-    <footer class="l-footer">
-        <h1>Header1</h1>
-        <h2>Header2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, velit nostrum quidem, labore odit
-            eligendi incidunt numquam non corrupti quos blanditiis sapiente fugiat distinctio provident! Dolor dolorem
-            non aperiam quisquam!</p>
-    </footer>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="dist/js/animsition.min.js" charset="utf-8"></script>
+    <script src="dist/js/libs/wow.min.js"></script>
+    <script src="dist/js/scroll.js"></script>
+    <script src="dist/js/index.js"></script>
+    <script src="dist/js/swipe.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".animsition").animsition({
+                inClass: 'fade-in',
+                outClass: 'fade-out',
+                inDuration: 300,
+                outDuration: 300,
+                linkElement: '.animsition-link',
+                // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+                loading: false,
+                loadingParentElement: 'body', //animsition wrapper element
+                loadingClass: 'animsition-loading',
+                loadingInner: '', // e.g '<img src="loading.svg" />'
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: ['animation-duration', '-webkit-animation-duration'],
+                // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+                // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+                overlay: false,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body',
+                transition: function (url) { window.location.href = url; }
+            });
+        });
+    </script>
 </body>
 
 </html>
