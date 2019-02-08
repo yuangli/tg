@@ -9,6 +9,11 @@ body{
     overflow-x: hidden;
 }
 
+p > a{
+    color: $MainColorscheme;    
+    text-decoration: underline;
+}
+
 a{
     color: $MainColorscheme;
     text-decoration: none;
