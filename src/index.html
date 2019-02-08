@@ -77,16 +77,17 @@
                     <li class="c-navbar__li c-navbar__li--uiux" onclick="filtout(uiux)">UI/UX</li>
                     <li class="c-navbar__li c-navbar__li--graphic" onclick="filtout(graphic)">Graphic</li>
                     <li class="c-navbar__li c-navbar__li--dev" onclick="filtout(dev)">Dev</li>
-                    <li class="c-navbar__li c-navbar__li--all">All</li>
+                    <li class="c-navbar__li c-navbar__li--all" onclick="filterReset()">All</li>
                 </ul>
             </div>
         </nav>
         <main class="l-wrapper">
             <!--  -->
             <div id="eoko" class="c-box wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-                <a href="eoko.html" class="animsition-link c-box__image c-box__image--eoko page1" id="page1"
+                <a href="eoko.html" class="animsition-link c-box__image page1" id="page1"
                     ontouchstart="p1touchStart(event,0)" ontouchmove="p1touchMove(event,0)" ontouchend="p1touchEnd(event,0)">
-                    <div class="c-color-filter"></div>
+                    <div class="c-color-filter c-color-filter__blue"></div>
+                    <div class="c-box__image--general c-box__image--eoko"></div>
                 </a>
                 <div class="c-box__text">
                     <h1 class="c-h1__eoko">eoko.inc</h1>
@@ -126,8 +127,10 @@
             </div>
 
             <div id="branding" class="c-box wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-                <a href="branding.html" class="animsition-link c-box__image c-box__image--branding page1" id="page1"
+                <a href="branding.html" class="animsition-link c-box__image page1" id="page1"
                     ontouchstart="p1touchStart(event,1)" ontouchmove="p1touchMove(event,1)" ontouchend="p1touchEnd(event,1)">
+                    <div class="c-color-filter c-color-filter__green"></div>
+                    <div class="c-box__image--general c-box__image--branding"></div>
                 </a>
                 <div class="c-box__text">
                     <h1 class="c-h1__branding">Branding</h1>
@@ -166,16 +169,17 @@
             </div>
 
             <div id="wp" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-                <a href="wp.html" class="animsition-link c-box__image c-box__image--wp page1" id="page1" ontouchstart="p1touchStart(event,4)"
+                <a href="wp.html" class="animsition-link c-box__image page1" id="page1" ontouchstart="p1touchStart(event,4)"
                     ontouchmove="p1touchMove(event,2)" ontouchend="p1touchEnd(event,2)">
+                    <div class="c-color-filter c-color-filter__blue"></div>
+                    <div class="c-box__image--general c-box__image--wp"></div>
                 </a>
                 <div class="c-box__text">
                     <h1 class="c-h1__wp">YuangLi.com</h1>
                     <h3 class="c-h3">Responsive CMS Website</h3>
                     <p>
                         Created a responsive CMS website from scratch by designing, wireframing, coding the static page
-                        and
-                        then the dynamic page using PHP with WordPress system.
+                        and dynamic page upon WordPress.
                     </p>
                 </div>
                 <div class="c-box__cates">
@@ -206,15 +210,17 @@
             </div>
 
             <div id="michelangelo" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-                <a href="michelangelo.html" class="animsition-link c-box__image c-box__image--michelangelo page1" id="page1"
+                <a href="michelangelo.html" class="animsition-link c-box__image page1" id="page1"
                     ontouchstart="p1touchStart(event,3)" ontouchmove="p1touchMove(event,3)" ontouchend="p1touchEnd(event,3)">
+                    <div class="c-color-filter c-color-filter__green"></div>
+                    <div class="c-box__image--general c-box__image--michelangelo"></div>
                 </a>
                 <div class="c-box__text">
                     <h1 class="c-h1__michelangelo">Michelangelo</h1>
                     <h3 class="c-h3">Coloring book</h3>
                     <p>
                         The project is for Workflow Optimization class, learning collaborative
-                        workflow techniques and maintaining deliverable schedule
+                        workflow techniques and maintaining deliverable schedule.
                     </p>
                 </div>
                 <div class="c-box__cates">
@@ -224,7 +230,8 @@
                         <li class="c-cate c-cate--michelangelo">ui</li>
                         <li class="c-cate c-cate--michelangelo">wireframe</li>
                     </ul>
-                    <a href="michelangelo.html" class="animsition-link c-cate c-cate_button c-cate_button--michelangelo">View More</a>
+                    <a href="michelangelo.html" class="animsition-link c-cate c-cate_button c-cate_button--michelangelo">View
+                        More</a>
                 </div>
                 <div class="page2" id="page2" ontouchstart="p2touchStart(event,3)" ontouchmove="p2touchMove(event,3)"
                     ontouchend="p2touchEnd(event,3)">
@@ -244,9 +251,53 @@
                 </div>
             </div>
 
-            <div id="recipes" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-                <a href="recipes.html" class="animsition-link c-box__image c-box__image--recipes page1" id="page1"
+            <div id="schmearit" class="c-box wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
+                <a href="schmearit.html" class="animsition-link c-box__image page1" id="page1"
                     ontouchstart="p1touchStart(event,4)" ontouchmove="p1touchMove(event,4)" ontouchend="p1touchEnd(event,4)">
+                    <div class="c-color-filter c-color-filter__blue"></div>
+                    <div class="c-box__image--general c-box__image--schmearIt"></div>
+                </a>
+                <div class="c-box__text">
+                    <h1 class="c-h1__schmearIt">Schmear It</h1>
+                    <h3 class="c-h3">Mobile Ordering App</h3>
+                    <p>
+                        Over the past 10 weeks our group has been working closely with Schmear It and their customers
+                        to
+                        create a brand new experience.
+                    </p>
+                </div>
+                <div class="c-box__cates">
+                    <img src="dist/img/SchmearIt_Main-Logo.jpg" alt="SchmearIt">
+                    <ul>
+                        <li class="c-cate c-cate--schmearIt">ui/ux</li>
+                        <li class="c-cate c-cate--schmearIt">prototype</li>
+                    </ul>
+                    <a href="schmearit.html" class="animsition-link c-cate c-cate_button c-cate_button--schmearIt">View
+                        More</a>
+                </div>
+                <div class="page2" id="page2" ontouchstart="p2touchStart_3(event)" ontouchmove="p2touchMove_3(event)"
+                    ontouchend="p2touchEnd_3(event)">
+                    <div class="c-box__img">
+                        <img src="dist/img/SchmearIt_Main-Logo.jpg" alt="SchmearIt">
+                    </div>
+                    <div class="c-box__exp">
+                        <h1 class="c-h1__schmearIt">Schmear It</h1>
+                        <h3 class="c-h3">Mobile Ordering App</h3>
+                        <p>
+                            Over the past 10 weeks our group has been working closely with Schmear It and their
+                            customers
+                            to
+                            create a brand new mobile ordering experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="recipes" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
+                <a href="recipes.html" class="animsition-link c-box__image page1" id="page1"
+                    ontouchstart="p1touchStart(event,4)" ontouchmove="p1touchMove(event,4)" ontouchend="p1touchEnd(event,4)">
+                    <div class="c-color-filter c-color-filter__green"></div>
+                    <div class="c-box__image--general c-box__image--recipes"></div>
                 </a>
                 <div class="c-box__text">
                     <h1 class="c-h1__recipes">Recipes</h1>
@@ -263,7 +314,8 @@
                         <li class="c-cate c-cate--recipes">ui</li>
                         <li class="c-cate c-cate--recipes">database</li>
                     </ul>
-                    <a href="recipes.html" class="animsition-link c-cate c-cate_button c-cate_button--recipes">View More</a>
+                    <a href="recipes.html" class="animsition-link c-cate c-cate_button c-cate_button--recipes">View
+                        More</a>
                 </div>
                 <div class="page2" id="page2" ontouchstart="p2touchStart(event,4)" ontouchmove="p2touchMove(event,4)"
                     ontouchend="p2touchEnd(event,4)">
@@ -283,7 +335,7 @@
                 </div>
             </div>
 
-            <div id="coachella" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
+            <!-- <div id="coachella" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
                 <a href="coachella.html" class="animsition-link c-box__image c-box__image--coachella page1" id="page1"
                     ontouchstart="p1touchStart(event,5)" ontouchmove="p1touchMove(event,5)" ontouchend="p1touchEnd(event,5)">
                 </a>
@@ -301,7 +353,8 @@
                         <li class="c-cate c-cate--coachella">dev</li>
                         <li class="c-cate c-cate--coachella">coursework</li>
                     </ul>
-                    <a href="coachella.html" class="animsition-link c-cate c-cate_button c-cate_button--coachella">View More</a>
+                    <a href="coachella.html" class="animsition-link c-cate c-cate_button c-cate_button--coachella">View
+                        More</a>
                 </div>
                 <div class="page2" id="page2" ontouchstart="p2touchStart(event,5)" ontouchmove="p2touchMove(event,5)"
                     ontouchend="p2touchEnd(event,5)">
@@ -318,11 +371,13 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div id="si" class="c-box  wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
-                <a href="si.html" class="animsition-link c-box__image c-box__image--si page1" id="page1" ontouchstart="p1touchStart(event,6)"
+                <a href="si.html" class="animsition-link c-box__image page1" id="page1" ontouchstart="p1touchStart(event,6)"
                     ontouchmove="p1touchMove(event,6)" ontouchend="p1touchEnd(event,6)">
+                    <div class="c-color-filter c-color-filter__blue"></div>
+                    <div class="c-box__image--general c-box__image--si"></div>
                 </a>
                 <div class="c-box__text">
                     <h1 class="c-h1__si">Sport Illustrated</h1>
