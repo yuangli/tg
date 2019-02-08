@@ -2,15 +2,10 @@
     position: relative;
     display: flex;
     overflow: hidden;
-    margin: 5rem auto;
+    margin: 5rem auto 0 auto;
     width: 100%;
     height: 25vh;
-
-    &__image{
-        mix-blend-mode: screen;
-        filter: grayscale(100%) contrast(90%);
-        transition: .3s;
-    }
+    transition: 1s;
     
     &__cates{
         display: none;
@@ -27,15 +22,30 @@
     }
 }
 
+.c-color-filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: screen;
+    z-index: 999;
+    transition: .5s;
+
+    &__green{
+        background-color: $SecondaryColoscheme;
+    }
+
+    &__blue{
+        background-color: $MainColorscheme;
+    }
+}
+
 .page1 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 25vh;
-    background-position: center;  
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: 0 auto;
 }
 
 .c-indicator{
@@ -45,7 +55,18 @@
 }
 
 .c-box__image {
+    &--general{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%) contrast(75%);
+        background-position: center;  
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .5s;
+    }
     &--eoko{
+
         background-image: url('../img/eoko_mock_up.jpg');        
     }
     &--busBuddy{
@@ -169,7 +190,7 @@
 
        
     &_button{
-        width: 7.3rem;
+        // width: 7.3rem;
         padding: .5rem 1rem;
         color: white;
         text-align: center;
@@ -226,6 +247,7 @@
 @media screen and (min-width: 1080px){
 
     .page1{
+        width: 50%;
         position: relative;
     }
 
@@ -240,11 +262,6 @@
             position: absolute;
             right: 0;
             width: 20%;
-        }
-    
-        &__image{
-            width: 50%;
-            margin: 0 auto;
         }
     
         &__text{
