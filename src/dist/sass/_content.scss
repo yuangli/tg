@@ -1,12 +1,145 @@
-
 .l-content{
-    width: 90%;
+    // width: 90%;
     margin: 0 auto;        
 }
 
 .l-content > *{
     line-height: 1.5;
-    margin: 5rem 0;
+    // margin: 5rem 0;
+}
+
+.l-content > img{
+    margin: auto;
+}
+
+.c-feature{
+
+    &--step{
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    background-color: $MainColorscheme;
+    color: white;
+    padding: .18rem .62rem;
+    }
+
+    &--goal{
+        text-align: center;
+
+        & > div{
+            width: 33%;
+            padding: 1.3rem;
+        }
+    }
+
+    &__1-image{
+        grid-area: feature1-img;
+    }
+    &__1-text{
+        grid-area: feature1-text;
+        margin: 2rem;
+    }
+
+    &__2-image{
+        grid-area: feature2-img;
+    }
+    &__2-text{
+        grid-area: feature2-text;
+        margin: 2rem;
+    }
+
+    &__3-image{
+        grid-area: feature3-img;
+    }
+    &__3-text{
+        grid-area: feature3-text;
+        margin: 2rem;
+    }
+
+    &__4-image{
+        grid-area: feature4-img;
+    }
+    &__4-text{
+        grid-area: feature4-text;
+        margin: 2rem;
+    }
+}
+
+.c-types{
+    &-12{
+        grid-area: type12;
+    }
+    &-30{
+        grid-area: type30;
+    }
+    &-description{
+        grid-area: types-description;
+        margin: auto;
+    }
+    &-transition{
+        grid-area: types-transition;
+    }
+    &-association{
+        grid-area: types-association;
+    }
+    &-wp{
+        grid-area: types-wp;
+        padding: 2rem;
+    }
+    &-beats{
+        grid-area: types-beats;
+        padding: 2rem;
+    }
+}
+
+.c-sielement{
+    &--research__mobile{
+        grid-area: si-research-mobile;
+    }
+    &--research__tablet{
+        grid-area: si-research-table;        
+    }
+    &--research__desktop{
+        grid-area: si-research-desktop;
+    }
+    &--anotation{
+        grid-area: si-anotation;
+        display: block;
+        list-style-type: none;
+    }
+    &--interaction{
+        grid-area: si-interaction;        
+    }
+    &--font1{
+        grid-area: si-font1;        
+    }
+    &--font2{
+        grid-area: si-font2;                
+    }
+    &--styleTile{
+        grid-area: si-style-tile;        
+    }
+    &--research-title{
+        grid-area: si-research-title;
+    }
+    &--interaction-title{
+        grid-area: si-interaction-title;
+    }
+    &--front-title{
+        grid-area: si-front-title;
+    }
+    &--styleTile-title{
+        grid-area: si-styleTile-title;
+    }
+    &--protyping__home{
+        grid-area: si-protyping-home;
+    }
+    &--protyping__article{
+        grid-area: si-protyping-article;
+    }
+    &--protyping-title{
+        grid-area: si-protyping-title;
+    }
 }
 
  .cate li{
@@ -34,14 +167,138 @@
 //  }
 
 @media screen and (min-width: 720px){
-    .l-content{
-    width: 70%;
+    // .l-content{
+    // width: 70%;
+    // }
+
+    
+    .c-feature{
+        &--goal{
+            display: flex;
+        }
+
+        > *{
+            margin: 0;
+        }
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20rem auto 20rem auto 20rem auto;
+        grid-template-areas: 
+        "feature1-img feature1-text"
+        "feature1-img feature2-img"
+        "feature2-text feature2-img"
+        "feature3-img feature3-text"
+        "feature3-img feature4-img"
+        "feature4-text feature4-img";
+
+        &__1-text{
+            grid-area: feature1-text;
+            margin: 2rem;
+        }
+        &__2-text{
+            grid-area: feature2-text;
+            margin: 2rem;
+        }
+        &__3-text{
+            grid-area: feature3-text;
+            margin: 2rem;
+        }
+        &__4-text{
+            grid-area: feature4-text;
+            margin: 2rem;
+        }
+
+        &--goal__1{
+            border-right: 1px solid;
+        }
+        &--goal__3{
+            border-left: 1px solid;
+        }
+    }
+
+    .c-inspiration{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 5rem;
+        grid-template-areas: 
+        "type12 type30 types-description"
+        "types-transition types-transition types-transition"
+        "types-association types-wp types-beats";
+    }
+
+    .c-sielement{
+        display: grid;
+        grid-template-columns: 25% 25% 10% 40%;
+        grid-template-rows: auto;
+        grid-row-gap: 5rem;
+        grid-template-areas: 
+        "si-research-title si-research-title si-research-title si-research-title"        
+        "si-research-desktop si-research-table si-research-mobile si-anotation"
+        "si-front-title si-front-title si-front-title si-front-title"
+        "si-font1 si-font1 si-font2 si-font2"
+        "si-interaction-title si-interaction-title si-interaction-title si-interaction-title"
+        "si-interaction si-interaction si-interaction si-interaction"
+        "si-styleTile-title si-styleTile-title si-styleTile-title si-styleTile-title"
+        "si-style-tile si-style-tile si-style-tile si-style-tile"
+        "si-protyping-title si-protyping-title si-protyping-title si-protyping-title"
+        "si-protyping-home si-protyping-home si-protyping-home si-protyping-home"
+        "si-protyping-article si-protyping-article si-protyping-article si-protyping-article";
+    
+        &--interaction{
+            display: flex;
+        }
+
+        &--anotation{
+            margin: auto;
+            font-size: 1.3rem;
+        }    
+        
+        &--protyping__home{
+            position: relative;
+            height: 20rem;
+            &__hifi{
+                transition: .5s;    
+                position: absolute;
+                opacity: 0;
+            }
+            &__lowfi{
+                transition: .5s;
+                position: absolute;            
+            }
+
+            &:hover > .c-sielement--protyping__home__hifi{
+                    opacity: 1;
+            }
+        }
+
+        &--protyping__article{
+            grid-area: si-protyping-article;
+            position: relative;
+            height: 50vh;
+    
+            &__hifi{
+                transition: .5s;    
+                position: absolute;
+                opacity: 0;
+            }
+            &__lowfi{
+                transition: .5s;
+                position: absolute;            
+            }
+
+            &:hover > .c-sielement--protyping__article__hifi{
+                opacity: 1;
+        }
+        }
+
     }
 }
 
 @media screen and (min-width: 1080px){
-    .l-content{
-        width: 50%;
-        }
+    // .l-content{
+    //     width: 50%;
+    //     }
 
 }
