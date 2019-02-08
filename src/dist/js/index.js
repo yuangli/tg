@@ -75,35 +75,84 @@ for (i = 0; i < images.length; i++) {
 for (i = 0; i < boxes.length; i++) {
   box = boxes[i];
   box.addEventListener('mouseleave', nohovered);
-  console.log(box);
+  // console.log(box);
 }
 
 function hovered() {
-  console.log('in');
   this.classList.add('js-is-hovered');
   this.classList.remove('js-is-nohovered');
 }
 function nohovered() {
-  console.log('out');
   this.children[0].classList.remove('js-is-hovered');
   this.children[0].classList.add('js-is-nohovered');
 }
 
-var uiux = [document.getElementById("eoko"), document.getElementById("busbuddy"), document.getElementById("schmearit"), document.getElementById("branding"), document.getElementById("wp"), document.getElementById("si")];
+// var uiux = [document.getElementById("eoko"), document.getElementById("busbuddy"), document.getElementById("schmearit"), document.getElementById("branding"), document.getElementById("wp"), document.getElementById("si")];
+// var graphic = [document.getElementById("eoko"), document.getElementById("branding"), document.getElementById("michelangelo"), document.getElementById("si")];
+// var dev = [document.getElementById("eoko"), document.getElementById("busbuddy"), document.getElementById("branding"), document.getElementById("wp"), document.getElementById("michelangelo"), document.getElementById("recipes"), document.getElementById("coachella")];
+
+
+var uiux = [document.getElementById("eoko"), document.getElementById("schmearit"), document.getElementById("branding"), document.getElementById("wp"), document.getElementById("si")];
 var graphic = [document.getElementById("eoko"), document.getElementById("branding"), document.getElementById("michelangelo"), document.getElementById("si")];
-var dev = [document.getElementById("eoko"), document.getElementById("busbuddy"), document.getElementById("branding"), document.getElementById("wp"), document.getElementById("michelangelo"), document.getElementById("recipes"), document.getElementById("coachella")];
+var dev = [document.getElementById("eoko"), document.getElementById("branding"), document.getElementById("wp"), document.getElementById("michelangelo"), document.getElementById("recipes"), document.getElementById("coachella")];
 
 function filtout(event) {
-  // if (x.style.display === "none") {
-  //   x.style.display = "block";
-  // } else {
-  //   x.style.display = "none";
-  // }
-  for (i = 0; i < event.length; i++) {
-    console.log(event[i]);
-    event[i].style = "display:none";
+  if (event == uiux) {
+    console.log('ui/ux');
+    var filter = graphic.concat(dev);
+    for (i = 0; i < filter.length; i++) {
+      console.log(filter[i]);
+      filter[i].style = "height:0; margin: 0 auto;";
+      // filter[i].classList.add('animated', 'fadeOut');
+    }
+    for (i = 0; i < uiux.length; i++) {
+      console.log(uiux[i]);
+      uiux[i].style = "height: 25vh; margin: 5rem auto 0 auto;";
+    }
   }
-}
+
+  if (event == graphic) {
+    console.log('graphic');
+    var filter = uiux.concat(dev);
+    for (i = 0; i < filter.length; i++) {
+      console.log(filter[i]);
+      filter[i].style = "height:0; margin: 0 auto;";
+    }
+    for (i = 0; i < graphic.length; i++) {
+      console.log(graphic[i]);
+      graphic[i].style = "height: 25vh; margin: 5rem auto 0 auto;";
+    }
+  }
+
+  if (event == dev) {
+    console.log('graphic');
+    var filter = uiux.concat(graphic);
+    for (i = 0; i < filter.length; i++) {
+      console.log(filter[i]);
+      filter[i].style = "height:0; margin: 0 auto;";
+    }
+    for (i = 0; i < dev.length; i++) {
+      console.log(dev[i]);
+      dev[i].style = "height: 25vh; margin: 5rem auto 0 auto;";
+    }
+  }
+};
+
+function filterReset(){
+  console.log('all');
+  for (i = 0; i < uiux.length; i++) {
+    console.log(uiux[i]);
+    uiux[i].style = "height: 25vh; margin: 5rem auto 0 auto;";
+  }
+  for (i = 0; i < graphic.length; i++) {
+    console.log(graphic[i]);
+    graphic[i].style = "height: 25vh; margin: 5rem auto 0 auto;";
+  }
+  for (i = 0; i < dev.length; i++) {
+    console.log(dev[i]);
+    dev[i].style = "height: 25vh; margin: 5rem auto 0 auto;";
+  }
+};
 
 // /*Interactivity to determine when an animated element in in view. In view elements trigger our animation*/
 // $(document).ready(function() {
