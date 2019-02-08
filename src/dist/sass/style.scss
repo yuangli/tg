@@ -32,7 +32,14 @@
 
 // JS Trigger
 .js-is-hovered{
-    filter: none;
+    > .c-color-filter{
+        background: none;
+    }
+    
+    > .c-box__image--general{
+        filter: none;
+    }
+
 
     ~ .c-box__text{
         animation-name: fadeInLeft;
