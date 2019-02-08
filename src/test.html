@@ -23,78 +23,57 @@
     <link href="dist/css/animsition.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Yuang Li | Coachella</title>
+    <title>Yuang Li | Home</title>
+    <style>
+
+    </style>
 </head>
 
 <body>
     <div class="animsition">
-        <header class="l-hearder--nav">
-            <a class="c-exit  wow fadeInDown animsition-link" href="index.html#recipes">
-                <img src="dist/img/exit.png" alt="home">
-            </a>
-            <div class="c-pagination wow fadeInDown">
-                <a class="c-pagination__prev animsition-link" href="recipes.html">
-                    <img src="dist/img/prev.png" alt="prev">
+        <main class="l-wrapper">
+            <!--  -->
+            <div id="eoko" class="c-box wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
+                <a href="eoko.html" class="animsition-link  page1 c-box__image" id="page1" ontouchstart="p1touchStart(event,0)"
+                    ontouchmove="p1touchMove(event,0)" ontouchend="p1touchEnd(event,0)">
+                    <div class="c-color-filter"></div>
+                    <div class="c-box__image--general c-box__image--eoko"></div>
                 </a>
-                <a class="c-pagination__next animsition-link" href="si.html">
-                    <img src="dist/img/next.png" alt="next">
-                </a>
-            </div>
-        </header>
-
-        <header class="c-title c-box wow fadeInUp" style="height:auto;">
-            <div class="c-title__feature-img">
-                <img src="dist/img/coachella_logo.png" alt="coachella">
-            </div>
-            <div class="c-title__text">
-                <h1 class="c-h1__coachella">Coachella 2018</h1>
-                <h3 class="c-h3">Interactive Poster</h3>
-                <p>
-                    Coachella interactive poster contains the basic information about the concert. Animations and
-                    background music make the poster more engaging.
-                </p>
-                <ul>
-                    <li class="c-cate c-cate--coachella">dev</li>
-                    <li class="c-cate c-cate--coachella">UI</li>
-                </ul>
-                <div class="c-title__buttons">
-                    <a href="http://yuangli.com/idm240/final" class="c-cate c-cate_button c-cate_button--coachella">Live
-                        Server</a>
-                    <a href="http://github.com/jdyuanglee/idm240" class="c-cate c-cate_button c-cate_button--coachella">View
-                        Code</a>
+                <div class="c-box__text">
+                    <h1 class="c-h1__eoko">eoko.inc</h1>
+                    <h3 class="c-h3">UI/UX Design Intern</h3>
+                    <p>
+                        Intern as a lead UI/UX Designer for eoko.inc. I am helping the company to improve the UI and UX
+                        of
+                        both
+                        eoko app and CloutQuiz app.
+                    </p>
                 </div>
-            </div>
-        </header>
-
-
-        <main class="l-decription">
-            <img class="c-title-image wow fadeInUp" src="dist/img/coachella_mockup.png" alt="s">
-            <p class="wow fadeInUp">
-                Coachella interactive poster contains the basic information about the concert. Animations and
-                background music make the poster more engaging. Through the poster, viewers can acutally go to the
-                acutally
-                site for more informations about Coachella 2018.
-            </p>
-            <div class="c-form wow fadeInUp">
-                <ul class="c-form--team">
-                    <p>
-                        Team
-                    </p>
-                    <li>Yuang Li</li>
-                </ul>
-                <ul class="c-form--tech">
-                    <p>
-                        Technologies
-                    </p>
-                    <li>HTML, CSS & JS</li>
-                    <li>SVG</li>
-                </ul>
-                <ul class="c-form--app">
-                    <p>
-                        Applications
-                    </p>
-                    <li>GitHub</li>
-                </ul>
+                <div class="c-box__cates">
+                    <img src="dist/img/eoko-logo.png" alt="SchmearIt">
+                    <ul>
+                        <li class="c-cate c-cate--eoko">ui/ux</li>
+                        <li class="c-cate c-cate--eoko">graphic</li>
+                        <li class="c-cate c-cate--eoko">Dev</li>
+                    </ul>
+                    <a href="eoko.html" class="animsition-link c-cate c-cate_button c-cate_button--eoko">View More</a>
+                </div>
+                <div class="page2" id="page2" ontouchstart="p2touchStart(event,0)" ontouchmove="p2touchMove(event,0)"
+                    ontouchend="p2touchEnd(event,0)">
+                    <div class="c-box__img">
+                        <img src="dist/img/eoko-logo.png" alt="eoko">
+                    </div>
+                    <div class="c-box__exp">
+                        <h1 class="c-h1__eoko">Eoko Clout Quiz</h1>
+                        <h3 class="c-h3">Mobile Ordering App</h3>
+                        <p>
+                            Over the past 10 weeks our group has been working closely with Schmear It and their
+                            customers
+                            to
+                            create a brand new mobile ordering experience.
+                        </p>
+                    </div>
+                </div>
             </div>
         </main>
 
@@ -114,6 +93,7 @@
     <script src="dist/js/scroll.js"></script>
     <script src="dist/js/index.js"></script>
     <script src="dist/js/swipe.js"></script>
+
     <script>
         $(document).ready(function () {
             $(".animsition").animsition({
@@ -139,7 +119,23 @@
                 transition: function (url) { window.location.href = url; }
             });
         });
+
+        var brandingImg = document.getElementsByClassName('page1');
+        console.log(brandingImg);
+
+        brandingImg[0].addEventListener('mouseover', aboutmeAnimation);
+        brandingImg[0].addEventListener('mouseleave', noAboutmeAnimation);
+
+        function aboutmeAnimation() {
+            this.classList.add('aboutmeAnimation');
+        }
+        function noAboutmeAnimation() {
+            this.classList.remove('aboutmeAnimation');
+        }
+
+
     </script>
+
 </body>
 
 </html>

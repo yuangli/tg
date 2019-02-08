@@ -2,92 +2,236 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    <link rel="stylesheet" href="dist/css/normalize.css">
     <link rel="stylesheet" href="dist/css/libs/animate.css">
     <link rel="stylesheet" href="dist/css/style.css">
+    <link href="dist/css/animsition.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Yuang Li | Schmear It</title>
 </head>
 
 <body>
-    <div class="c-exit">
-        <div class="home" onclick="location.href='index.html#schmearit';">
-            <img src="dist/img/exit.png" alt="home">
-        </div>
+    <div class="animsition">
+        <header class="l-hearder--nav">
+            <a class="c-exit  wow fadeInDown animsition-link" href="index.html#michelangelo">
+                <img src="dist/img/exit.png" alt="home">
+            </a>
+            <div class="c-pagination wow fadeInDown">
+                <a class="c-pagination__prev animsition-link" href="michelangelo.html">
+                    <img src="dist/img/prev.png" alt="prev">
+                </a>
+                <a class="c-pagination__next animsition-link" href="recipes.html">
+                    <img src="dist/img/next.png" alt="next">
+                </a>
+            </div>
+        </header>
+
+        <header class="c-title c-box wow fadeInUp" style="height:auto;">
+            <div class="c-title__feature-img">
+                <img src="dist/img/SchmearIt_Main-Logo.jpg" alt="SchmearIt">
+            </div>
+            <div class="c-title__text">
+                <h1 class="c-h1__schmearIt">Schmear It</h1>
+                <h3 class="c-h3">Mobile Ordering Experience</h3>
+                <p>
+                    Over the past 10 weeks our group has been working closely with Schmear It and their customers to
+                    create a brand new mobile ordering experience.
+                </p>
+                <ul>
+                    <li class="c-cate c-cate--schmearIt">ui/ux</li>
+                    <li class="c-cate c-cate--schmearIt">prototype</li>
+                </ul>
+                <div class="c-title__buttons">
+                    <a href="http://digm.drexel.edu/idm/2018/06/15/schmear-it/" class="c-cate c-cate_button c-cate_button--schmearIt">case
+                        study</a>
+                </div>
+            </div>
+        </header>
+
+
+        <main class="l-decription">
+            <img class="c-title-image wow fadeInUp" src="dist/img/scene_3.jpg" alt="s">
+            <p class="wow fadeInUp">
+                Over the past 10 weeks our group has been working closely with Schmear It and their customers to create
+                a
+                brand new mobile ordering experience. We conducted primary research, went through multiple rounds of
+                ideation and user testing, and ultimately created a final interactive mockup in Sketch and Flinto.
+                Through
+                this process we learned the importance of collaboration, user testing, team meetings, and understanding
+                business requirements. We are extremely pleased with the final application and hope users
+                love
+                it as well.
+            </p>
+            <h3 class="wow fadeInUp">Context and Challenge</h3>
+            <p class="wow fadeInUp">
+                Schmear It is a local Philadelphia bagel food truck established in 2013 and recently expanded into a
+                physical location in October 2016. Our team was tasked with developing a mobile application for Schmear
+                It that provided mobile ordering, rewards, and business information for their customers. This
+                application would substitute their existing order ahead solution on their website. We worked closely
+                with Schmear It and their customers to test and develop this mobile application over the past 10 weeks.
+                <br><br>
+                While Schmear It already had a mobile ordering function built into their website. It was not advertised
+                or communicated to users very clearly on their website (especially the mobile site) or at their
+                physical locations. The goal of this application was to bring mobile ordering to Schmear It in an
+                accessible and discoverable way for users, while preserving the unique personality and branding Schmear
+                It has developed. The application should also promote their build-your-own option as this is their
+                preferred way for people to order and their collaboration with charities.
+            </p>
+            <h3 class="wow fadeInUp">Process and Insight</h3>
+            <p class="wow fadeInUp">
+                We began the design process by establishing a relationship with Schmear It. We created a business model
+                canvas and project model canvas for the company. After that we began visiting the truck and store to
+                observe the ordering process and the customer experience Schmear It provides.
+            </p>
+            <img class="c-title-image wow fadeInUp" src="dist/img/schmearit_app_research.png" alt="schmearit_app_research">
+            <p class="wow fadeInUp">
+                From there we began conducting competitive research on competing mobile ordering applications to
+                determine what ideas, flows, and features were already on the market. We determined our target audience
+                based on the surrounding area and the customers we saw from visiting Schmear It. We determined our
+                primary customer types were students, commuters, medical professionals, and to a lesser degree
+                tourists.
+            </p>
+            <p class="wow fadeInUp">
+                After our initial research and planning, we began to sketch wireframes for potential designs and user
+                flows. This process, like every process was collaborative and we went through 2 rounds of wireframes
+                before moving to digital mockups.
+            </p>
+            <img class="c-title-image wow fadeInUp" src="dist/img/schmearit_moodboard.png" alt="schmearit_app_research">
+            <p class="wow fadeInUp">
+                From there we made individual mood boards that we combined into a unified team mood board with our
+                color palette, potential iconography, fonts, etc.</p>
+            <img class="c-title-image wow fadeInUp" src="dist/img/schmearit_paperproto.png" alt="schmearit_app_research">
+            <p class="wow fadeInUp">
+                We then began creating wireframes in Sketch and tested paper prototypes with users.
+                After testing with paper prototypes we moved into testing digital mockups with scripted user
+                interviews. We repeated this testing every week from weeks 6-10. After each round of testing we
+                regrouped as a team, discussed our user feedback, and determined what changes needed to be made for the
+                following week. Collectively we tested with approximately 50 users over weeks 6-10. In week 7, we began
+                using Flinto to add animation and navigation to our prototypes. The navigation went through several
+                revisions as the first few prototypes were difficult to navigate. By week 10 we had a final prototype
+                that went through one final round of testing and validation.</p>
+            <img class="c-title-image wow fadeInUp" src="dist/img/schmearit_hifi_testing.png" alt="schmearit_app_research">
+            <p class="wow fadeInUp">
+                After testing with paper prototypes we moved into testing digital mockups with scripted user
+                interviews. We repeated this testing every week from weeks 6-10. After each round of testing we
+                regrouped as a team, discussed our user feedback, and determined what changes needed to be made for the
+                following week. Collectively we tested with approximately 50 users over weeks 6-10. In week 7, we began
+                using Flinto to add animation and navigation to our prototypes. The navigation went through several
+                revisions as the first few prototypes were difficult to navigate. By week 10 we had a final prototype
+                that went through one final round of testing and validation.
+            </p>
+            <p class="wow fadeInUp">
+                Overall we split the initial wireframe sketches and user testing between each team member. Alex Aslid
+                created mockups in sketch and the final presentation. Alex Huffaker helped create standardized UI
+                elements in Sketch and the final case study.
+            </p>
+            <p class="wow fadeInUp">
+                Yuang Li created the initial wireframes in Sketch for testing and assisted Jordan with animations in
+                Flinto. Jordan Zagerman focused on talking with the business, users, and later animations in Flinto.
+                Miles was responsible for creating graphics and did the final work in Sketch before it was passed off
+                to the Flinto team.
+            </p>
+            <h3 class="wow fadeInUp">Solution</h3>
+            <p class="wow fadeInUp">From the start we wanted ordering to be as easy and fast as possible. This was a
+                defining trait that drove our design decisions. This led to the removal of an initial sign up screen
+                and was a driving factor for the adoption of an ever-present card style cart.
+            </p>
+            <p class="wow fadeInUp">You can see the application clearly promotes the charity Schmear It is working with
+                that month as well as displaying their logo and branding.
+            </p>
+            <p class="wow fadeInUp">The home screen allows the users to dive immediately into the menu and ordering
+                process. A card-style cart is persistent at the bottom of the ordering section of the application. The
+                location and account pages are positioned to the left and right respectively and can be navigated with
+                a swipe left or right or by tapping the respective icon from the navigation bar.
+            </p>
+            <div class="c-form wow fadeInUp">
+                <ul class="c-form--team">
+                    <p>
+                        Team
+                    </p>
+                    <li>Yuang Li</li>
+                    <li>Alex Alsid</li>
+                    <li>Alex Huffaker</li>
+                    <li>Miles Waldron</li>
+                    <li>Jordan Zagerman</li>
+                </ul>
+                <ul class="c-form--tech">
+                    <p>
+                        Technologie
+                    </p>
+                    <li>UX Research</li>
+                    <li>Prototyping</li>
+                    <li>Usability Testing</li>
+                </ul>
+                <ul class="c-form--app">
+                    <p>
+                        Applications
+                    </p>
+                    <li>Adobe Creative Cloud</li>
+                    <li>Sketch</li>
+                    <li>Flinto</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer class="l-footer">
+            <h1>Header1</h1>
+            <h2>Header2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, velit nostrum quidem, labore odit
+                eligendi incidunt numquam non corrupti quos blanditiis sapiente fugiat distinctio provident! Dolor
+                dolorem
+                non aperiam quisquam!</p>
+        </footer>
     </div>
 
-    <header class="c-title c-box" style="height:auto;">
-        <div class="c-title__feature-img">
-            <img src="dist/img/SchmearIt_Main-Logo.jpg" alt="SchmearIt">
-        </div>
-        <div class="c-title__text">
-            <h1 class="c-h1__schmearIt">Schmear It</h1>
-            <h3 class="c-h3">Mobile Ordering Experience</h3>    
-            <p>
-                Over the past 10 weeks our group has been working closely with Schmear It and their customers to
-                create a brand new mobile ordering experience.
-            </p>
-            <ul>
-                <li class="c-cate c-cate--schmearIt">ui/ux</li>
-                <li class="c-cate c-cate--schmearIt">prototype</li>
-            </ul>
-            <div class="c-title__buttons">
-                <a href="http://digm.drexel.edu/idm/2018/06/15/schmear-it/" class="c-cate c-cate_button c-cate_button--schmearIt">case study</a>
-            </div>
-        </div>
-    </header>
-
-
-    <main class="l-decription">
-        <img class="c-title-image" src="dist/img/scene_3.jpg" alt="s">
-        <p>
-            Over the past 10 weeks our group has been working closely with Schmear It and their customers to create a
-            brand new mobile ordering experience. We conducted primary research, went through multiple rounds of
-            ideation and user testing, and ultimately created a final interactive mockup in Sketch and Flinto. Through
-            this process we learned the importance of collaboration, user testing, team meetings, and understanding
-            business requirements. We are extremely pleased with the final application and hope Schmear It’s users love
-            it as well.
-        </p>
-        <div class="c-form">
-            <ul class="c-form--team">
-                <p>
-                    Team
-                </p>
-                <li>Yuang Li</li>
-                <li>Alex Alsid</li>
-                <li>Alex Huffaker</li>
-                <li>Miles Waldron</li>
-                <li>Jordan Zagerman</li>
-            </ul>
-            <ul class="c-form--tech">
-                <p>
-                    Technologie
-                </p>
-                <li>UX Research</li>
-                <li>Prototyping</li>
-                <li>Usability Testing</li>
-            </ul>
-            <ul class="c-form--app">
-                <p>
-                    Applications
-                </p>
-                <li>Adobe Creative Cloud</li>
-                <li>Sketch</li>
-                <li>Flinto</li>
-            </ul>
-        </div>
-    </main>
-
-    <footer class="l-footer">
-        <h1>Header1</h1>
-        <h2>Header2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, velit nostrum quidem, labore odit
-            eligendi incidunt numquam non corrupti quos blanditiis sapiente fugiat distinctio provident! Dolor dolorem
-            non aperiam quisquam!</p>
-    </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="dist/js/animsition.min.js" charset="utf-8"></script>
+    <script src="dist/js/libs/wow.min.js"></script>
+    <script src="dist/js/scroll.js"></script>
+    <script src="dist/js/index.js"></script>
+    <script src="dist/js/swipe.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".animsition").animsition({
+                inClass: 'fade-in',
+                outClass: 'fade-out',
+                inDuration: 300,
+                outDuration: 300,
+                linkElement: '.animsition-link',
+                // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+                loading: false,
+                loadingParentElement: 'body', //animsition wrapper element
+                loadingClass: 'animsition-loading',
+                loadingInner: '', // e.g '<img src="loading.svg" />'
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: ['animation-duration', '-webkit-animation-duration'],
+                // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+                // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+                overlay: false,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body',
+                transition: function (url) { window.location.href = url; }
+            });
+        });
+    </script>
 
 </body>
 
