@@ -29,14 +29,14 @@
 }
 
 .c-pagination{
-    margin: 3rem 1rem;
-    width: 5rem;
+    margin: auto 0;
+    width: 4rem;
     display: flex;
-    position: fixed;
+    // position: fixed;
     top: 1rem;
     right: 1rem;
 
-    & > *{
+    & > :first-child {
         margin-right: 1rem;
     }
 }

@@ -4,19 +4,6 @@
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Analytics -->
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-XXXXX-Y', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <!-- End Google Analytics -->
     <link rel="stylesheet" href="dist/css/normalize.css">
     <link rel="stylesheet" href="dist/css/libs/animate.css">
     <link rel="stylesheet" href="dist/css/style.css">
@@ -28,10 +15,21 @@
 
 <body>
     <div class="animsition">
-        <header class="l-hearder--nav">
-            <a class="c-exit  wow fadeInDown animsition-link" href="index.html#eoko">
-                <img src="dist/img/exit.png" alt="home">
-            </a>
+        <nav class="l-navbar wow fadeInDown" data-wow-duration=".7s" data-wow-delay=".1s">
+            <div class="c-logo">
+                <a class="c-logo__image" href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1811.75 1863.99">
+                        <path class="cls-1"
+                            d="M1139.54,883.36S794.83,909.12,794.83,509.82,1139.54,123.4,1139.54,123.4s363.87,6.44,351.1,380S1254.45,870.48,1139.54,883.36Z" />
+                        <path class="cls-1"
+                            d="M1120,1861.32s-545.59,14.23-531.51-215.62,214.51-197.47,533.9-207.16c112.64-3.42,212.52.87,294.6,15.14,150.66,26.21,241.31,86,240.71,193.53C1656.72,1813.26,1464.9,1850.5,1120,1861.32Z" />
+                        <path class="cls-1"
+                            d="M1808.3,1159.47c-8.25-90.8-55.14-169.35-127.73-217.15-36-23.71-82.22-45.9-125.93-52.8a6.09,6.09,0,0,1-2.51-.95,6.4,6.4,0,0,0-.68-.39s-158.83-59-263.94-28h0c-54.14,17.82-109,20-150,24.64,0,0-344.71,25.76-344.71-373.54a584.08,584.08,0,0,1,6.77-89.9l-2.24-2S755.59,232.55,679,168.68C607.58,80.18,503.3,2.5,383.4,2.5c-157,0-274.08,91.36-274.08,254.09,0,65.62,17.86,117.34,56.47,148.77,26.54,24,63,38.8,103.33,38.8,81.13,0,146.9-60,146.9-134.12a124.77,124.77,0,0,0-20.2-67.89c-10-19.13-25.23-33.45-44.48-43.26a155.59,155.59,0,0,0-75-22.8c24.27-31.81,70.1-39.41,118.45-39.41,77.08,0,165.58,57.1,211.26,114.21-45.68,85.64-79.93,185.56-79.93,305.47,0,225.54,231.24,459.65,605.23,459.65,186.4,0,282.8-45.39,311.91-60.09,7.64,1.16,21.15,3.22,25.71,4,23.31,4,45.57,13.29,58.29,20.73,42.53,24.89,62.13,76.64,70.25,121.35,25.55,140.5-232.71,124.18-327.11,119.57-88.18-4.31-381.79,1.94-420.14,2.78l0-1s-344.88-12.77-447.07,204.37l442.89,2.63c90,4.2,418.73,18.78,551.42,7.24,17.63-1.53,33.94-3.48,33.94-3.48a1019.38,1019.38,0,0,0,212.08-48.48s69.11-27.7,113.64-72.87C1793.45,1276,1814,1222.51,1808.3,1159.47Z" />
+                        <rect class="cls-1" x="2.5" y="1231.85" width="268.24" height="204.37" />
+                    </svg>
+                </a>
+                <h3 class="c-logo__title">Branding</h3>
+            </div>
             <div class="c-pagination wow fadeInDown">
                 <a class="c-pagination__prev animsition-link" href="eoko.html">
                     <img src="dist/img/prev.png" alt="prev">
@@ -40,8 +38,7 @@
                     <img src="dist/img/next.png" alt="next">
                 </a>
             </div>
-        </header>
-
+        </nav>
         <header class="c-title c-box wow fadeInUp" style="height:auto;">
             <div class="c-title__feature-img">
                 <img src="dist/img/branding_title_image.png" alt="branding">
@@ -68,7 +65,7 @@
 
 
         <main class="l-decription">
-            <img class="c-title-image wow fadeInUp" src="dist/img/branding.png" alt="s">
+            <img class="c-title-image wow fadeInUp" src="dist/img/branding.jpeg" alt="s">
             <p class="wow fadeInUp">
                 The process of designing my person branding is consist of creating a unique logo, building a
                 fully-polished website and a solid resume. I started the whole process of building in September and
@@ -86,7 +83,8 @@
             <div class="l-content c-inspiration wow fadeInUp">
                 <img class="c-types-12 wow fadeInUp" src="dist/img/brand_type12.png" alt="brand_type12">
                 <img class="c-types-30 wow fadeInUp" src="dist/img/brand_type30.png" alt="brand_type30">
-                <p class="c-types-description wow fadeInUp">The process of designing my person branding is consist of creating a
+                <p class="c-types-description wow fadeInUp">The process of designing my person branding is consist of
+                    creating a
                     unique logo, building a
                     fully-polished website and a solid resume. I started the whole process of building in September and
                     still keep polishing it. I used the knowledge of graphic design, UI designer, content managing as
@@ -94,7 +92,8 @@
                 <img class="c-types-transition wow fadeInUp" src="dist/img/brand_transition.png" alt="brand_transition">
                 <div class="c-types-association wow fadeInUp">
                     <h4 class="wow fadeInUp">The Association</h4>
-                    <p class="wow fadeInUp">The association between my mark and the existing logo is pretty much about that we all use the
+                    <p class="wow fadeInUp">The association between my mark and the existing logo is pretty much about
+                        that we all use the
                         negative space to express the space. Also, we all have 2D perspective and a text as the base.
                         The second mark also have serif in the word W and also some of the shapes are cut off but
                         still can be recognized.</p>

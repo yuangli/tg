@@ -27,7 +27,7 @@
 
 // WOW.JS
 .wow:first-child {
-    // visibility: hidden;
+    visibility: hidden;
 }
 
 // JS Trigger
@@ -70,6 +70,13 @@
         animation-fill-mode: forwards;  
     }
 }
+
+@media (min-width: 87.5em) {
+    html {
+      font-size: 120%;
+    }
+}
+
 *{
 /* Border for developing */
 // border-style: solid;

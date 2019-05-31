@@ -294,6 +294,34 @@
         }
 
     }
+    .c-content-flex{
+        display: flex;
+   
+        & > img {
+            width: 60%;
+            height: 100%;
+        }
+   
+        & > p {
+            padding: 0 2rem;
+        }
+    }
+   
+    .c-flex{
+       display: flex;
+   
+       & :first-child{
+        padding-right: .5rem;
+        }
+        & :last-child{
+            padding-left: .5rem;
+        }
+
+       & > img {
+           width: 50%;
+           height: 100%;
+       }
+   }
 }
 
 @media screen and (min-width: 1080px){

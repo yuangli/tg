@@ -498,3 +498,348 @@ function p2touchEnd_5(evt) {
         // p2.style.display = 'none';
     }
 };
+
+// -------------------------------------------
+
+function p1touchStart_6(evt) {
+    startingX = evt.touches[0].clientX;
+};
+
+function p1touchMove_6(evt) {
+    var touch = evt.touches[0];
+    var change = startingX - touch.clientX;
+    if (change < 0) {
+        return;
+    }
+    p1[5].style.left = '-' + change + 'px';
+    p2[5].style.display = 'flex';
+    p2[5].style.left = (screen.width - change) + 'px';
+    evt.preventDefault();
+};
+
+function p1touchEnd_6(evt) {
+    var change = startingX - evt.changedTouches[0].clientX;
+    var threshold = screen.width / 3;
+    if (change < threshold) {
+        p1[5].style.left = 0;
+        p2[5].style.left = '100%';
+        p2[5].style.display = 'none';
+    } else {
+        p1[5].style.transition = 'all .3s';
+        p2[5].style.transition = 'all .3s';
+        p1[5].style.left = '-100%';
+        p2[5].style.left = '0';
+        p2[5].style.display = 'flex';
+    }
+};
+
+function p2touchStart_6(evt) {
+    startingX = evt.touches[0].clientX;
+    p1[5].style.transition = '';
+    p2[5].style.transition = '';
+    p1[5].style.display = "none";
+};
+
+function p2touchMove_6(evt) {
+    var touch = evt.touches[0];
+    var change = touch.clientX - startingX;
+    if (change < 0) {
+        return;
+    }
+    p1[5].style.display = 'flex';
+    p1[5].style.left = (change - screen.width) + 'px';
+    p2[5].style.left = change + 'px';
+    evt.preventDefault();
+};
+
+function p2touchEnd_6(evt) {
+    var change = evt.changedTouches[0].clientX - startingX;
+    var half = screen.width / 4;
+    if (change < half) {
+        p1[5].style.left = '-100%';
+        p1[5].style.display = 'none';
+        p2[5].style.left = '0';
+    } else {
+        p1[5].style.transition = 'all .3s';
+        p2[5].style.transition = 'all .3s';
+        p1[5].style.left = '0';
+        p2[5].style.left = '100%';
+        // p2.style.display = 'none';
+    }
+};
+
+// -------------------------------------------
+
+function p1touchStart_7(evt) {
+    startingX = evt.touches[0].clientX;
+};
+
+function p1touchMove_7(evt) {
+    var touch = evt.touches[0];
+    var change = startingX - touch.clientX;
+    if (change < 0) {
+        return;
+    }
+    p1[6].style.left = '-' + change + 'px';
+    p2[6].style.display = 'flex';
+    p2[6].style.left = (screen.width - change) + 'px';
+    evt.preventDefault();
+};
+
+function p1touchEnd_7(evt) {
+    var change = startingX - evt.changedTouches[0].clientX;
+    var threshold = screen.width / 3;
+    if (change < threshold) {
+        p1[6].style.left = 0;
+        p2[6].style.left = '100%';
+        p2[6].style.display = 'none';
+    } else {
+        p1[6].style.transition = 'all .3s';
+        p2[6].style.transition = 'all .3s';
+        p1[6].style.left = '-100%';
+        p2[6].style.left = '0';
+        p2[6].style.display = 'flex';
+    }
+};
+
+function p2touchStart_7(evt) {
+    startingX = evt.touches[0].clientX;
+    p1[6].style.transition = '';
+    p2[6].style.transition = '';
+    p1[6].style.display = "none";
+};
+
+function p2touchMove_7(evt) {
+    var touch = evt.touches[0];
+    var change = touch.clientX - startingX;
+    if (change < 0) {
+        return;
+    }
+    p1[6].style.display = 'flex';
+    p1[6].style.left = (change - screen.width) + 'px';
+    p2[6].style.left = change + 'px';
+    evt.preventDefault();
+};
+
+function p2touchEnd_7(evt) {
+    var change = evt.changedTouches[0].clientX - startingX;
+    var half = screen.width / 4;
+    if (change < half) {
+        p1[6].style.left = '-100%';
+        p1[6].style.display = 'none';
+        p2[6].style.left = '0';
+    } else {
+        p1[6].style.transition = 'all .3s';
+        p2[6].style.transition = 'all .3s';
+        p1[6].style.left = '0';
+        p2[6].style.left = '100%';
+        // p2.style.display = 'none';
+    }
+};
+
+// -------------------------------------------
+
+function p1touchStart_8(evt) {
+    startingX = evt.touches[0].clientX;
+};
+
+function p1touchMove_8(evt) {
+    var touch = evt.touches[0];
+    var change = startingX - touch.clientX;
+    if (change < 0) {
+        return;
+    }
+    p1[7].style.left = '-' + change + 'px';
+    p2[7].style.display = 'flex';
+    p2[7].style.left = (screen.width - change) + 'px';
+    evt.preventDefault();
+};
+
+function p1touchEnd_8(evt) {
+    var change = startingX - evt.changedTouches[0].clientX;
+    var threshold = screen.width / 3;
+    if (change < threshold) {
+        p1[7].style.left = 0;
+        p2[7].style.left = '100%';
+        p2[7].style.display = 'none';
+    } else {
+        p1[7].style.transition = 'all .3s';
+        p2[7].style.transition = 'all .3s';
+        p1[7].style.left = '-100%';
+        p2[7].style.left = '0';
+        p2[7].style.display = 'flex';
+    }
+};
+
+function p2touchStart_8(evt) {
+    startingX = evt.touches[0].clientX;
+    p1[7].style.transition = '';
+    p2[7].style.transition = '';
+    p1[7].style.display = "none";
+};
+
+function p2touchMove_8(evt) {
+    var touch = evt.touches[0];
+    var change = touch.clientX - startingX;
+    if (change < 0) {
+        return;
+    }
+    p1[7].style.display = 'flex';
+    p1[7].style.left = (change - screen.width) + 'px';
+    p2[7].style.left = change + 'px';
+    evt.preventDefault();
+};
+
+function p2touchEnd_8(evt) {
+    var change = evt.changedTouches[0].clientX - startingX;
+    var half = screen.width / 4;
+    if (change < half) {
+        p1[7].style.left = '-100%';
+        p1[7].style.display = 'none';
+        p2[7].style.left = '0';
+    } else {
+        p1[7].style.transition = 'all .3s';
+        p2[7].style.transition = 'all .3s';
+        p1[7].style.left = '0';
+        p2[7].style.left = '100%';
+        // p2.style.display = 'none';
+    }
+};
+
+// -------------------------------------------
+
+function p1touchStart_9(evt) {
+    startingX = evt.touches[0].clientX;
+};
+
+function p1touchMove_9(evt) {
+    var touch = evt.touches[0];
+    var change = startingX - touch.clientX;
+    if (change < 0) {
+        return;
+    }
+    p1[8].style.left = '-' + change + 'px';
+    p2[8].style.display = 'flex';
+    p2[8].style.left = (screen.width - change) + 'px';
+    evt.preventDefault();
+};
+
+function p1touchEnd_9(evt) {
+    var change = startingX - evt.changedTouches[0].clientX;
+    var threshold = screen.width / 3;
+    if (change < threshold) {
+        p1[8].style.left = 0;
+        p2[8].style.left = '100%';
+        p2[8].style.display = 'none';
+    } else {
+        p1[8].style.transition = 'all .3s';
+        p2[8].style.transition = 'all .3s';
+        p1[8].style.left = '-100%';
+        p2[8].style.left = '0';
+        p2[8].style.display = 'flex';
+    }
+};
+
+function p2touchStart_9(evt) {
+    startingX = evt.touches[0].clientX;
+    p1[8].style.transition = '';
+    p2[8].style.transition = '';
+    p1[8].style.display = "none";
+};
+
+function p2touchMove_9(evt) {
+    var touch = evt.touches[0];
+    var change = touch.clientX - startingX;
+    if (change < 0) {
+        return;
+    }
+    p1[8].style.display = 'flex';
+    p1[8].style.left = (change - screen.width) + 'px';
+    p2[8].style.left = change + 'px';
+    evt.preventDefault();
+};
+
+function p2touchEnd_9(evt) {
+    var change = evt.changedTouches[0].clientX - startingX;
+    var half = screen.width / 4;
+    if (change < half) {
+        p1[8].style.left = '-100%';
+        p1[8].style.display = 'none';
+        p2[8].style.left = '0';
+    } else {
+        p1[8].style.transition = 'all .3s';
+        p2[8].style.transition = 'all .3s';
+        p1[8].style.left = '0';
+        p2[8].style.left = '100%';
+        // p2.style.display = 'none';
+    }
+};
+
+// -------------------------------------------
+
+function p1touchStart_10(evt) {
+    startingX = evt.touches[0].clientX;
+};
+
+function p1touchMove_10(evt) {
+    var touch = evt.touches[0];
+    var change = startingX - touch.clientX;
+    if (change < 0) {
+        return;
+    }
+    p1[9].style.left = '-' + change + 'px';
+    p2[9].style.display = 'flex';
+    p2[9].style.left = (screen.width - change) + 'px';
+    evt.preventDefault();
+};
+
+function p1touchEnd_10(evt) {
+    var change = startingX - evt.changedTouches[0].clientX;
+    var threshold = screen.width / 3;
+    if (change < threshold) {
+        p1[9].style.left = 0;
+        p2[9].style.left = '100%';
+        p2[9].style.display = 'none';
+    } else {
+        p1[9].style.transition = 'all .3s';
+        p2[9].style.transition = 'all .3s';
+        p1[9].style.left = '-100%';
+        p2[9].style.left = '0';
+        p2[9].style.display = 'flex';
+    }
+};
+
+function p2touchStart_10(evt) {
+    startingX = evt.touches[0].clientX;
+    p1[9].style.transition = '';
+    p2[9].style.transition = '';
+    p1[9].style.display = "none";
+};
+
+function p2touchMove_10(evt) {
+    var touch = evt.touches[0];
+    var change = touch.clientX - startingX;
+    if (change < 0) {
+        return;
+    }
+    p1[9].style.display = 'flex';
+    p1[9].style.left = (change - screen.width) + 'px';
+    p2[9].style.left = change + 'px';
+    evt.preventDefault();
+};
+
+function p2touchEnd_10(evt) {
+    var change = evt.changedTouches[0].clientX - startingX;
+    var half = screen.width / 4;
+    if (change < half) {
+        p1[9].style.left = '-100%';
+        p1[9].style.display = 'none';
+        p2[9].style.left = '0';
+    } else {
+        p1[9].style.transition = 'all .3s';
+        p2[9].style.transition = 'all .3s';
+        p1[9].style.left = '0';
+        p2[9].style.left = '100%';
+        // p2.style.display = 'none';
+    }
+};

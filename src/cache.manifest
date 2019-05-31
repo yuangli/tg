@@ -1,0 +1,36 @@
+CACHE MANIFEST
+# v1 - 2019-03-04
+
+CACHE:
+
+# HTML FILES
+index.html
+eoko.html
+branding.html
+wp.html
+michelangelo.html
+schmearit.html
+recipes.html
+si.html
+
+# CSS
+dist/css/style.css
+dist/css/libs/animate.css
+dist/css/animsition.min.css
+dist/css/normalize.css
+
+# JAVASCRIPT - SPECIFIC ORDER
+dist/js/index.js
+dist/js/scroll.js
+dist/js/animsition.min.js
+dist/js/swipe.js
+dist/js/libs/wow.min.js
+
+# IMAGES
+dist/img/recipe_mockup.png
+dist/img/michelangelo_mockup.png
+dist/img/wp_mockup.png
+dist/img/eoko_mock_up.jpg
+dist/img/sportillustrated.png
+dist/img/branding.png
+dist/img/scene_3.jpg

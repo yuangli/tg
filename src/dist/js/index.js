@@ -19,26 +19,7 @@
 // 	navbar[0].classList.add('l-navbar--hidden');
 // }
 
-
-var navbar = document.getElementsByClassName('l-navbar');
-var box = document.getElementsByClassName('c-box__image');
-
-for (var i = 0; i < box.length; i++) {
-  box[i].addEventListener('mouseenter', animation1);
-  box[i].addEventListener('mouseout', noanimation1);
-}
-
-function animation1() {
-  $(navbar[0]).css({ "top": "-10rem" });
-
-}
-function noanimation1() {
-  $(navbar[0]).css({ "top": "0rem" });
-}
-
-
-
-
+// Smooth Scroll
 $(document).ready(function () {
   // Add smooth scrolling to all links
   $("a").on('click', function (event) {
@@ -64,6 +45,27 @@ $(document).ready(function () {
   });
 });
 
+// Hover hide navbar
+// var navbar = document.getElementsByClassName('l-navbar');
+// var box = document.getElementsByClassName('c-box');
+
+// for (var i = 0; i < box.length; i++) {
+//   box[i].addEventListener('mouseenter', animation1);
+//   box[i].addEventListener('mouseout', noanimation1);
+// }
+
+// function animation1() {
+//   console.log('hovered navbar');
+//   $(navbar[0]).css({ "top": "-10rem" });
+
+// }
+// function noanimation1() {
+//   console.log('hovered navbar off');
+//   $(navbar[0]).css({ "top": "0rem" });
+// }
+
+// Hover cate & showing
+var navbar = document.getElementsByClassName('l-navbar');
 var images = document.getElementsByClassName('c-box__image');
 var boxes = document.getElementsByClassName('c-box');
 
@@ -81,10 +83,12 @@ for (i = 0; i < boxes.length; i++) {
 function hovered() {
   this.classList.add('js-is-hovered');
   this.classList.remove('js-is-nohovered');
+  $(navbar[0]).css({ "top": "-10rem" });
 }
 function nohovered() {
   this.children[0].classList.remove('js-is-hovered');
   this.children[0].classList.add('js-is-nohovered');
+  $(navbar[0]).css({ "top": "0rem" });
 }
 
 // var uiux = [document.getElementById("eoko"), document.getElementById("busbuddy"), document.getElementById("schmearit"), document.getElementById("branding"), document.getElementById("wp"), document.getElementById("si")];
@@ -92,9 +96,15 @@ function nohovered() {
 // var dev = [document.getElementById("eoko"), document.getElementById("busbuddy"), document.getElementById("branding"), document.getElementById("wp"), document.getElementById("michelangelo"), document.getElementById("recipes"), document.getElementById("coachella")];
 
 
-var uiux = [document.getElementById("eoko"), document.getElementById("schmearit"), document.getElementById("branding"), document.getElementById("wp"), document.getElementById("si")];
+// Filter out on navbar
+var uiux = [document.getElementById("eoko"), document.getElementById("schmearit"), document.getElementById("branding"), document.getElementById("si")];
 var graphic = [document.getElementById("eoko"), document.getElementById("branding"), document.getElementById("michelangelo"), document.getElementById("si")];
-var dev = [document.getElementById("eoko"), document.getElementById("branding"), document.getElementById("wp"), document.getElementById("michelangelo"), document.getElementById("recipes"), document.getElementById("coachella")];
+var dev = [document.getElementById("branding"), document.getElementById("wp"), document.getElementById("michelangelo"), document.getElementById("recipes")];
+
+var uiuxBtn = document.getElementsByClassName('c-navbar__li--uiux');
+var graphicBtn = document.getElementsByClassName('c-navbar__li--graphic');
+var devBtn = document.getElementsByClassName('c-navbar__li--dev');
+var allBtn = document.getElementsByClassName('c-navbar__li--all');
 
 function filtout(event) {
   if (event == uiux) {
@@ -107,8 +117,14 @@ function filtout(event) {
     }
     for (i = 0; i < uiux.length; i++) {
       console.log(uiux[i]);
-      uiux[i].style = "height: 25vh; margin: 5rem auto 0 auto;";
+      uiux[i].style = "height: 15rem; margin: 5rem auto 0 auto;";
     }
+    allBtn[0].style.color = "#9B9B9B";
+    uiuxBtn[0].style.color = "#CDC9C6";
+    graphicBtn[0].style.color = "#9B9B9B";
+    devBtn[0].style.color = "#9B9B9B";
+
+    $('.c-box__image--si')[0].previousElementSibling.style.backgroundColor = '#216739';
   }
 
   if (event == graphic) {
@@ -120,8 +136,15 @@ function filtout(event) {
     }
     for (i = 0; i < graphic.length; i++) {
       console.log(graphic[i]);
-      graphic[i].style = "height: 25vh; margin: 5rem auto 0 auto;";
+      graphic[i].style = "height: 15rem; margin: 5rem auto 0 auto;";
     }
+    allBtn[0].style.color = "#9B9B9B";
+    uiuxBtn[0].style.color = "#9B9B9B";
+    graphicBtn[0].style.color = "#CDC9C6";
+    devBtn[0].style.color = "#9B9B9B";
+
+    $('.c-box__image--si')[0].previousElementSibling.style.backgroundColor = '#216739';
+    $('.c-box__image--michelangelo')[0].previousElementSibling.style.backgroundColor = '#444C57';
   }
 
   if (event == dev) {
@@ -133,25 +156,39 @@ function filtout(event) {
     }
     for (i = 0; i < dev.length; i++) {
       console.log(dev[i]);
-      dev[i].style = "height: 25vh; margin: 5rem auto 0 auto;";
+      dev[i].style = "height: 15rem; margin: 5rem auto 0 auto;";
     }
+    allBtn[0].style.color = "#9B9B9B";
+    uiuxBtn[0].style.color = "#9B9B9B";
+    graphicBtn[0].style.color = "#9B9B9B";
+    devBtn[0].style.color = "#CDC9C6";
+    $('.c-box__image--recipes')[0].previousElementSibling.style.backgroundColor = '#444C57';
+    $('.c-box__image--michelangelo')[0].previousElementSibling.style.backgroundColor = '#216739';
   }
 };
 
-function filterReset(){
+function filterReset() {
   console.log('all');
   for (i = 0; i < uiux.length; i++) {
     console.log(uiux[i]);
-    uiux[i].style = "height: 25vh; margin: 5rem auto 0 auto;";
+    uiux[i].style = "height: 15rem; margin: 5rem auto 0 auto;";
   }
   for (i = 0; i < graphic.length; i++) {
     console.log(graphic[i]);
-    graphic[i].style = "height: 25vh; margin: 5rem auto 0 auto;";
+    graphic[i].style = "height: 15rem; margin: 5rem auto 0 auto;";
   }
   for (i = 0; i < dev.length; i++) {
     console.log(dev[i]);
-    dev[i].style = "height: 25vh; margin: 5rem auto 0 auto;";
+    dev[i].style = "height: 15rem; margin: 5rem auto 0 auto;";
   }
+  allBtn[0].style.color = "#CDC9C6";
+  uiuxBtn[0].style.color = "#9B9B9B";
+  graphicBtn[0].style.color = "#9B9B9B";
+  devBtn[0].style.color = "#9B9B9B";
+
+  $('.c-box__image--michelangelo')[0].previousElementSibling.style.backgroundColor = '#216739';
+  $('.c-box__image--recipes')[0].previousElementSibling.style.backgroundColor = '#216739';
+  $('.c-box__image--si')[0].previousElementSibling.style.backgroundColor = '#444C57';
 };
 
 // /*Interactivity to determine when an animated element in in view. In view elements trigger our animation*/

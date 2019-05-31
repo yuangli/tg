@@ -1,23 +1,46 @@
 .l-navbar{
+    color: #9B9B9B;
     transition-duration: .5s;
     display: flex;
     justify-content: space-between;
     top: 0;
-    padding-top: 3rem;
-    margin: 0;
+    padding-top: 1rem;
+    margin: 0 2rem 0 1.5rem;
     z-index: 99;
 
 }
 
 .c-logo{
-    display: none;
-    & > img{
-    height: 4.5rem;
+
+    display: inherit;
+    margin: auto 0;
+    
+    &__title{
+        display: none;
+    }
+
+    &__image{
+        transition: .5s;
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 30px;
+        padding: 10px;
+        background-color: #D6D6D6;
+    }
+
+    &__image:hover{
+        border-radius: 5px;
+        background-color: $MainColorscheme;
+        cursor: pointer;
+    }
+
+    &__title{
+        margin: auto 1rem;
     }
 }
 
 .c-navbar{
-    margin: auto;
+    margin: auto 0;
 
     &__li{
         margin: 0 1rem;
@@ -25,21 +48,34 @@
 }
 
 .c-navbar__li{
-    text-decoration: line-through;
+    cursor: pointer;
+    &--all{
+        color: #CDC9C6;
+    }
 }
 
-@media screen and (min-width: 1080px){
+@media screen and (min-width: 768px){
     .l-navbar{
+        padding-top: 3rem;
         margin: 0 5rem;
-        position: sticky;
     }
     .c-logo{
+        &__title{
+            display: inline;
+        }
+
         display: inherit;
-        width: 5rem;
         margin: auto 0;
     }
 
     .c-navbar{
-        margin: 0;
+        margin: auto 0;
     }
+}
+
+@media screen and (min-width: 1080px){
+    .l-navbar{
+        position: sticky;
+    }
+
 }

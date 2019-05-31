@@ -1,10 +1,43 @@
+#intro{
+    height: 26rem;
+    width: 80vw;
+}
+
+.c-intro{
+    &__p{
+        color: #9B9B9B;
+    }
+
+    &__h1{
+        color: $MainColorscheme;
+    }
+
+    &__h2{
+        color: #808080;
+    }
+
+    &__h3{
+        color: $MainColorscheme;
+    }
+
+}
+
+.c-cate_button{
+    &--contactme{
+        background-color: #216739;
+    }
+    &--resume{
+        background-color: #444C57;
+    }
+}
+
 .c-box{
     position: relative;
     display: flex;
     overflow: hidden;
     margin: 5rem auto 0 auto;
     width: 100%;
-    height: 25vh;
+    height: 13rem;
     transition: 1s;
     
     &__cates{
@@ -24,7 +57,7 @@
 
 .c-color-filter {
     position: absolute;
-    width: 100%;
+    width: 99.9%;
     height: 100%;
     mix-blend-mode: screen;
     z-index: 999;
@@ -44,7 +77,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 25vh;
+    height: 13rem;
     margin: 0 auto;
 }
 
@@ -73,10 +106,10 @@
         background-image: url('../img/busbuddy_logo.png');
     }
     &--schmearIt{
-        background-image: url('../img/scene_3.png');
+        background-image: url('../img/scene_3.jpg');
     }
     &--branding{
-        background-image: url('../img/branding.png');
+        background-image: url('../img/branding.jpeg');
     }    
     &--wp{
         background-image: url('../img/wp_mockup.png');
@@ -103,7 +136,7 @@
     top: 0;
     left: 100%;
     width: 100%;
-    height: 25vh;
+    height: 13rem;
 }
 
 .c-box__exp {
@@ -228,25 +261,30 @@
     }
 }
 
-// @media screen and (min-width: 720px){
-//     .c-box{
-//         width: 100%;
-
-//         &__cates{
-//             display: none;
-//         }
-
-//         &__text{
-//             display: none;
-//         }
-//     }
-// }
+@media screen and (min-width: 720px){
+    #intro{
+        height: 21rem;
+        width: 65%;
+    }
+    .c-box{
+        width: 65%;
+    }
+}
 
 
 
 @media screen and (min-width: 1080px){
+    #intro{
+        width: 85%;
+        height: 22rem;
+    }
+
+    .c-box{
+        height: 15rem;
+    }
 
     .page1{
+        height: 15rem;
         width: 50%;
         position: relative;
     }
